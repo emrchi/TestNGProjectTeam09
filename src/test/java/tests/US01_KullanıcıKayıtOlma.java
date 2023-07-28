@@ -38,6 +38,7 @@ public class US01_KullanıcıKayıtOlma {
                 Keys.TAB,ConfigReader.getProperty("kullaniciPassWord"),Keys.ENTER);
         alloverCommercePage.IagreeToText.click();
         alloverCommercePage.SignUpOnay.click();
+        Driver.closeDriver();
         //Sign Out yazısının göründüğünü doğrula
        // Assert.assertTrue(alloverCommercePage.verify.isDisplayed());
 
