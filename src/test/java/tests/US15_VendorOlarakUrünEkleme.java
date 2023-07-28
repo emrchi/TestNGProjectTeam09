@@ -11,7 +11,7 @@ import utilities.ReusableMethods;
 
 import static utilities.ReusableMethods.scrollEnd;
 
-public class US15_VendorOlarakUrünEkleme {
+public class US15_VendorOlarakUrünEkleme extends ExtentReport{
 
 
     @Test
@@ -45,10 +45,20 @@ public class US15_VendorOlarakUrünEkleme {
         sourcePage.addNew.click();
 
         Assert.assertTrue(sourcePage.inventory.isDisplayed());
+
         Assert.assertTrue(sourcePage.shipping.isDisplayed());
+
         Assert.assertTrue(sourcePage.linked.isDisplayed());
+
         Assert.assertTrue(sourcePage.seo.isDisplayed());
+
         Assert.assertTrue(sourcePage.advanced.isDisplayed());
+
+        //ahmet 12
+
+
+
+
 
 
 
