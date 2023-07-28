@@ -14,6 +14,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+
 public class ReusableMethods {
 
     public static void signIn(String username, String password){
@@ -27,6 +28,10 @@ public class ReusableMethods {
     public static void giris(){
         Driver.getDriver().get(ConfigReader.getProperty("allovercommerceUrl"));
     }
+    
+public class
+ReusableMethods {
+
     
     //HARD WAIT METHOD
     public static void bekle(int saniye) {

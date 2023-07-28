@@ -1,6 +1,8 @@
 package pages;
 
+
 import org.openqa.selenium.By;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -11,50 +13,39 @@ public AlloverCommercePage(){
     PageFactory.initElements(Driver.getDriver(),this);
 }
 
-
-
-
-
-
     //Ahmet Gul
+        @FindBy(xpath = "//*[@class='login inline-type']")
+        public WebElement login;
 
+    @FindBy(xpath = "(//*[@name='username'])[1]")
+    public WebElement username;
 
+    @FindBy(xpath = "//*[@id='menu-item-1079']")
+    public WebElement myAccount;
 
+    @FindBy(xpath = "//*[@class='woocommerce-MyAccount-navigation-link woocommerce-MyAccount-navigation-link--wcfm-store-manager']")
+    public WebElement storeManager;
 
+    @FindBy(xpath = "//*[@class='wcfm_menu_items wcfm_menu_wcfm-products']")
+    public WebElement products;
 
+    @FindBy(xpath = "//*[@id='add_new_product_dashboard']")
+    public WebElement addNew;
 
+    @FindBy(xpath = "(//*[@class='page_collapsible_content_holder'])[1]")
+    public WebElement inventory;
 
+    @FindBy(xpath = "(//*[@class='page_collapsible_content_holder'])[4]")
+    public WebElement shipping;
 
+    @FindBy(xpath = "(//*[@class='page_collapsible_content_holder'])[7]")
+    public WebElement linked;
 
+    @FindBy(xpath = "(//*[@class='page_collapsible_content_holder'])[8]")
+    public WebElement seo;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    @FindBy(xpath = "(//*[@class='page_collapsible_content_holder'])[8]")
+    public WebElement advanced;
 
   //Ahmet Gul
   //Emre Yilmaz
@@ -215,6 +206,30 @@ public AlloverCommercePage(){
 
     //Demir Bilmez
     //Hafize Aktas
+    @FindBy (xpath = "(//span)[14]" )
+    public WebElement register;
+
+    @FindBy (xpath = "//*[@class = 'register_as_vendor']")
+    public WebElement signUpAsVendor;
+
+    @FindBy (xpath = "//*[@id = 'user_email']")
+    public WebElement email;
+
+    @FindBy (xpath = "//*[@id = 'passoword']")
+    public WebElement password;
+
+    @FindBy(xpath = "//*[@id = 'confirm_pwd']")
+    public WebElement confirmPassword;
+
+    @FindBy (xpath = "(//input)[4]")
+    public WebElement verificationCode;
+
+    @FindBy (xpath = "(//input)[5]")
+    public WebElement resendCode;
+
+
+
+
 
 
 
@@ -492,9 +507,9 @@ public AlloverCommercePage(){
     public WebElement signUpButton;
 
     @FindBy(id="reg_username")
-    public WebElement signUpUsername;
+    public WebElement fakeUserName;
     @FindBy(xpath ="//*[@name='email']" )
-    public WebElement signUpEmail;
+    public WebElement fakeEmail;
     @FindBy(xpath ="(//*[@name='password'])[2]" )
     public WebElement signUpPassword;
     @FindBy(xpath ="//*[@id='register-policy']" )
@@ -506,8 +521,13 @@ public AlloverCommercePage(){
     public WebElement SignUpOnay;
     @FindBy(xpath ="//*[text()='Sign Out']" )
     public WebElement verify;
+    @FindBy(id ="reg_username" )
+    public WebElement kayitliUserName;
 
-
+    @FindBy(xpath="(//*[@class='submit-status'])[2]" )
+    public WebElement negativeVerify;
+    @FindBy(xpath ="//*[@name='email']" )
+    public WebElement kayitliEmail;
 
 
 

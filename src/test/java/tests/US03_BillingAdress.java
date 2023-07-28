@@ -1,5 +1,6 @@
 package tests;
 
+
 import org.testng.annotations.Test;
 import pages.AlloverCommercePage;
 import utilities.ConfigReader;
@@ -45,5 +46,7 @@ public class US03_BillingAdress extends ExtentReport{
 
 
 
-    }
+public class US03_BillingAdress {
+
+
 }
