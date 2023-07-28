@@ -28,9 +28,7 @@ public class ReusableMethods {
     public static void giris(){
         Driver.getDriver().get(ConfigReader.getProperty("allovercommerceUrl"));
     }
-    
-public class
-ReusableMethods {
+
 
     
     //HARD WAIT METHOD
