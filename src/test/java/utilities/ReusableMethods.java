@@ -4,6 +4,7 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import pages.AlloverCommercePage;
 
 import java.io.File;
 import java.io.IOException;
@@ -13,8 +14,24 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+
+public class ReusableMethods {
+
+    public static void signIn(String username, String password){
+        AlloverCommercePage alloverCommercePage = new AlloverCommercePage();
+        alloverCommercePage.anasayfaSignIn.click();
+        alloverCommercePage.username.sendKeys(username,Keys.TAB,password);
+        alloverCommercePage.login.click();
+
+    }
+
+    public static void giris(){
+        Driver.getDriver().get(ConfigReader.getProperty("allovercommerceUrl"));
+    }
+    
 public class
 ReusableMethods {
+
     
     //HARD WAIT METHOD
     public static void bekle(int saniye) {
