@@ -509,9 +509,9 @@ public AlloverCommercePage(){
     public WebElement signUpButton;
 
     @FindBy(id="reg_username")
-    public WebElement signUpUsername;
+    public WebElement fakeUserName;
     @FindBy(xpath ="//*[@name='email']" )
-    public WebElement signUpEmail;
+    public WebElement fakeEmail;
     @FindBy(xpath ="(//*[@name='password'])[2]" )
     public WebElement signUpPassword;
     @FindBy(xpath ="//*[@id='register-policy']" )
@@ -523,8 +523,13 @@ public AlloverCommercePage(){
     public WebElement SignUpOnay;
     @FindBy(xpath ="//*[text()='Sign Out']" )
     public WebElement verify;
+    @FindBy(id ="reg_username" )
+    public WebElement kayitliUserName;
 
-
+    @FindBy(xpath="(//*[@class='submit-status'])[2]" )
+    public WebElement negativeVerify;
+    @FindBy(xpath ="//*[@name='email']" )
+    public WebElement kayitliEmail;
 
 
 
