@@ -14,7 +14,7 @@ public class US03_BillingAdress extends ExtentReport{
     @Test
     public void TC01() {
         AlloverCommercePage alloverCommercePage = new AlloverCommercePage();
-        extentTest=extentReports.createTest("tradylinn sitesine girme","urun test");
+        extentTest = extentReports.createTest("tradylinn sitesine girme", "urun test");
 
         //Go to home page
         ReusableMethods.giris();
@@ -23,7 +23,7 @@ public class US03_BillingAdress extends ExtentReport{
 
         //Navigate to “Sign in” page
         //Sign in
-        ReusableMethods.signIn(ConfigReader.getProperty("kullaniciUserName"),ConfigReader.getProperty("kullaniciPassWord"));
+        ReusableMethods.signIn(ConfigReader.getProperty("kullaniciUserName"), ConfigReader.getProperty("kullaniciPassWord"));
 
         //Click on “My Account” button
         alloverCommercePage.myAccount.click();
@@ -44,9 +44,5 @@ public class US03_BillingAdress extends ExtentReport{
         //Verify that address is not added below “Billing Address” section
 
 
-
-
-public class US03_BillingAdress {
-
-
+    }
 }
