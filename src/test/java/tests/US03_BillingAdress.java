@@ -10,7 +10,7 @@ import utilities.ReusableMethods;
 
 import static utilities.ReusableMethods.signIn;
 
-public class US03_BillingAdress extends ExtentReport{
+public class US03_BillingAdress extends ExtentReport {
     @Test
     public void TC01() {
         AlloverCommercePage alloverCommercePage = new AlloverCommercePage();
@@ -45,4 +45,8 @@ public class US03_BillingAdress extends ExtentReport{
 
 
     }
+
+
+
 }
+
