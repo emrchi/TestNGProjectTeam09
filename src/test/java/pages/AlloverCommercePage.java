@@ -58,7 +58,14 @@ public AlloverCommercePage(){
 
   //Ahmet Gul
   //Emre Yilmaz
-
+    @FindBy(xpath = "(//input[@id='username'])[1]")
+    public WebElement username;
+    @FindBy(xpath = "(//input[@id='password'])[1]")
+    public WebElement password;
+    @FindBy(xpath = "//*[@name='login']")
+    public WebElement login;
+    @FindBy(xpath = "//*[@id='menu-item-1079']")
+    public WebElement myAccount;
 
 
 
