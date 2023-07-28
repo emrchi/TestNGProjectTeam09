@@ -1,9 +1,8 @@
 package pages;
 
-<<<<<<< HEAD
-=======
+
 import org.openqa.selenium.By;
->>>>>>> main
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -14,47 +13,39 @@ public AlloverCommercePage(){
     PageFactory.initElements(Driver.getDriver(),this);
 }
 
-    public AlloverCommercePage(){PageFactory.initElements(Driver.getDriver(),this);}
-
     //Ahmet Gul
+        @FindBy(xpath = "//*[@class='login inline-type']")
+        public WebElement login;
 
+    @FindBy(xpath = "(//*[@name='username'])[1]")
+    public WebElement username;
 
+    @FindBy(xpath = "//*[@id='menu-item-1079']")
+    public WebElement myAccount;
 
+    @FindBy(xpath = "//*[@class='woocommerce-MyAccount-navigation-link woocommerce-MyAccount-navigation-link--wcfm-store-manager']")
+    public WebElement storeManager;
 
+    @FindBy(xpath = "//*[@class='wcfm_menu_items wcfm_menu_wcfm-products']")
+    public WebElement products;
 
+    @FindBy(xpath = "//*[@id='add_new_product_dashboard']")
+    public WebElement addNew;
 
+    @FindBy(xpath = "(//*[@class='page_collapsible_content_holder'])[1]")
+    public WebElement inventory;
 
+    @FindBy(xpath = "(//*[@class='page_collapsible_content_holder'])[4]")
+    public WebElement shipping;
 
+    @FindBy(xpath = "(//*[@class='page_collapsible_content_holder'])[7]")
+    public WebElement linked;
 
+    @FindBy(xpath = "(//*[@class='page_collapsible_content_holder'])[8]")
+    public WebElement seo;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    @FindBy(xpath = "(//*[@class='page_collapsible_content_holder'])[8]")
+    public WebElement advanced;
 
   //Ahmet Gul
   //Emre Yilmaz
