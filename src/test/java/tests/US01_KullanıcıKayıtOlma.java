@@ -11,6 +11,7 @@ import utilities.ReusableMethods;
 
 import java.security.Key;
 
+
 public class US01_KullanıcıKayıtOlma {
 
 
@@ -19,8 +20,11 @@ public class US01_KullanıcıKayıtOlma {
     @Test
     public void testSiteyeLoginOlma() throws InterruptedException {
 
-        //Anasayfaya git
-        Driver.getDriver().get(ConfigReader.getProperty("allovercommerceUrl"));
+
+        //Go to home page
+
+
+
         //Register butonunu tıkla
         AlloverCommercePage alloverCommercePage=new AlloverCommercePage();
         alloverCommercePage.anasayfaRegister.click();
