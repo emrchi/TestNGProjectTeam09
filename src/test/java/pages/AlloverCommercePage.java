@@ -47,6 +47,107 @@ public AlloverCommercePage(){
     @FindBy(xpath = "(//*[@class='page_collapsible_content_holder'])[8]")
     public WebElement advanced;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
   //Ahmet Gul
   //Emre Yilmaz
     @FindBy(xpath = "(//input[@id='username'])[1]")
@@ -104,6 +205,100 @@ public AlloverCommercePage(){
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
   //Emre Yilmaz
   //Suleyman Nasirdinov
 
@@ -154,6 +349,51 @@ public AlloverCommercePage(){
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
    //Suleyman Nasirdinov
    //Demir Bilmez
 
@@ -201,6 +441,20 @@ public AlloverCommercePage(){
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
 
 
 
@@ -278,6 +532,28 @@ public AlloverCommercePage(){
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
     //Hafize Aktas
     //Ibrahim Akcal
 
@@ -328,8 +604,31 @@ public AlloverCommercePage(){
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
     //Ibrahim Akcal
-    //Mehmet Ali Obuz
+    //Sihat Ferat Toktaş
 
 
 
@@ -378,7 +677,25 @@ public AlloverCommercePage(){
 
 
 
-    //Mehmet Ali Obuz
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+    //Sihat Ferat Toktaş
     //Mecid
 
 
@@ -427,6 +744,23 @@ public AlloverCommercePage(){
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
 
     //Mecid
     //Nalan Demir
@@ -475,6 +809,22 @@ public AlloverCommercePage(){
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
 
 
 
