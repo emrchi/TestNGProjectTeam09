@@ -6,6 +6,9 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import pages.AlloverCommercePage;
 
+import java.awt.*;
+import java.awt.datatransfer.StringSelection;
+import java.awt.event.KeyEvent;
 import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
@@ -17,20 +20,19 @@ import java.util.List;
 
 public class ReusableMethods {
 
-    public static void signIn(String username, String password){
+    public static void signIn(String username, String password) {
         AlloverCommercePage alloverCommercePage = new AlloverCommercePage();
         alloverCommercePage.anasayfaSignIn.click();
-        alloverCommercePage.username.sendKeys(username,Keys.TAB,password);
+        alloverCommercePage.username.sendKeys(username, Keys.TAB, password);
         alloverCommercePage.login.click();
 
     }
 
-    public static void giris(){
+    public static void giris() {
         Driver.getDriver().get(ConfigReader.getProperty("allovercommerceUrl"));
     }
 
 
-    
     //HARD WAIT METHOD
     public static void bekle(int saniye) {
         try {
@@ -120,7 +122,7 @@ public class ReusableMethods {
     //Tüm Sayfa ScreenShot
     public static String tumSayfaResmi(String name) {
         String tarih = new SimpleDateFormat("_hh_mm_ss_ddMMyyyy").format(new Date());
-        String dosyaYolu = "TestOutput/screenshot/screenshot" +tarih+ ".png";
+        String dosyaYolu = "TestOutput/screenshot/screenshot" + tarih + ".png";
         TakesScreenshot ts = (TakesScreenshot) Driver.getDriver();
         try {
             FileUtils.copyFile(ts.getScreenshotAs(OutputType.FILE), new File(dosyaYolu));
@@ -141,7 +143,7 @@ public class ReusableMethods {
             throw new RuntimeException(e);
         }
     }
-    
+
     //WebTable
     public static void printData(int satir, int sutun) {
         WebElement satirSutun = Driver.getDriver().findElement(By.xpath("(//tbody)[1]//tr[" + satir + "]//td[" + sutun + "]"));
@@ -193,5 +195,166 @@ public class ReusableMethods {
         JavascriptExecutor js = (JavascriptExecutor) Driver.getDriver();
         String attribute_Value = (String) js.executeScript("return document.getElementById('" + id + "')." + attributeName);
         System.out.println("Attribute Value: = " + attribute_Value);
+
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //File Upload Robot Class
+    public static void uploadFile(String dosyaYolu) {
+        try {
+            bekle(3);
+            StringSelection stringSelection = new StringSelection(dosyaYolu);
+            Toolkit.getDefaultToolkit().getSystemClipboard().setContents(stringSelection, null);
+            Robot robot = new Robot();
+            robot.keyPress(KeyEvent.VK_CONTROL);
+            robot.keyPress(KeyEvent.VK_V);
+            robot.keyRelease(KeyEvent.VK_CONTROL);
+            robot.keyRelease(KeyEvent.VK_V);
+            robot.delay(3000);
+            robot.keyPress(KeyEvent.VK_ENTER);
+            robot.keyRelease(KeyEvent.VK_ENTER);
+            robot.delay(3000);
+        } catch (Exception ignored) {
+
+        }
+    }
+
+
 }
