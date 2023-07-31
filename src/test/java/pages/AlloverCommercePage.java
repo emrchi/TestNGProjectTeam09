@@ -201,6 +201,7 @@ public AlloverCommercePage(){
   //Emre Yilmaz
 
 
+
     @FindBy(xpath = "//*[@name='login']")
     public WebElement loginButton;
     @FindBy(xpath = "//a[text()='Addresses']")
@@ -396,9 +397,8 @@ public AlloverCommercePage(){
 
 
 
-
-  //Emre Yilmaz
-  //Suleyman Nasirdinov
+    //Emre Yilmaz
+    //Suleyman Nasirdinov
 
 
 

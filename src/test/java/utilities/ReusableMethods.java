@@ -1,4 +1,5 @@
 package utilities;
+import com.github.javafaker.Faker;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -15,7 +16,9 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+
 import static tests.US03_AddingBillingAdress.alloverCommercePage;
+
 import static utilities.ExtentReport.extentTest;
 
 
@@ -142,6 +145,24 @@ public class ReusableMethods {
         Driver.getDriver().get(ConfigReader.getProperty("allovercommerceUrl"));
         extentTest.info("Went to the homepage successfully");
     }
+    public static void register(){
+        AlloverCommercePage alloverCommercePage=new AlloverCommercePage();
+        alloverCommercePage.anasayfaRegister.click();
+
+        ReusableMethods.bekle(3);
+
+        Faker faker=new Faker();
+        String fakeUserName=faker.name().username();
+        String fakeEmail=faker.internet().emailAddress();
+        alloverCommercePage.fakeUserName.sendKeys(fakeUserName);
+        alloverCommercePage.fakeEmail.sendKeys(fakeEmail);
+        alloverCommercePage.signUpPassword.sendKeys(ConfigReader.getProperty("kullaniciPassWord"));
+        alloverCommercePage.IagreeToText.click();
+        alloverCommercePage.SignUpOnay.click();
+    }
+
+
+
 
     
     //HARD WAIT METHOD
