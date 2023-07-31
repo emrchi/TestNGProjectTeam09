@@ -14,8 +14,8 @@ public AlloverCommercePage(){
 }
 
     //Ahmet Gul
-        @FindBy(xpath = "//*[@class='login inline-type']")
-        public WebElement login;
+    @FindBy(xpath = "//*[@class='login inline-type']")
+    public WebElement login;
 
     @FindBy(xpath = "(//*[@name='username'])[1]")
     public WebElement username;
@@ -147,17 +147,110 @@ public AlloverCommercePage(){
 
 
 
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   //Ahmet Gul
   //Emre Yilmaz
-    @FindBy(xpath = "(//input[@id='username'])[1]")
-    public WebElement username;
-    @FindBy(xpath = "(//input[@id='password'])[1]")
-    public WebElement password;
+
+
     @FindBy(xpath = "//*[@name='login']")
-    public WebElement login;
-    @FindBy(xpath = "//*[@id='menu-item-1079']")
-    public WebElement myAccount;
+    public WebElement loginButton;
+    @FindBy(xpath = "//a[text()='Addresses']")
+    public WebElement addresses;
+    @FindBy(xpath = "(//a[@class='edit btn btn-link btn-primary btn-underline mb-4'])[1]")
+    public WebElement billingAddressAdd;
+    @FindBy(xpath = "(//a[@class='edit btn btn-link btn-primary btn-underline mb-4'])[2]")
+    public WebElement shipingAddressAdd;
+    @FindBy(xpath = "//input[@id='billing_first_name']")
+    public WebElement billingFirstName;
+    @FindBy(xpath = "//input[@id='shipping_first_name']")
+    public WebElement shippingFirstName;
+    @FindBy(xpath = "//input[@id='billing_last_name']")
+    public WebElement billingLastName;
+    @FindBy(xpath = "//input[@id='shipping_last_name']")
+    public WebElement shippingLastName;
+    @FindBy(xpath = "(//select)[1]")
+    public WebElement billingCountry;
+    @FindBy(xpath = "(//select)[1]")
+    public WebElement shippingCountry;
+    @FindBy(xpath = "//input[@id='billing_address_1']")
+    public WebElement billingStreet;
+    @FindBy(xpath = "//input[@id='shipping_address_1']")
+    public WebElement shippingStreet;
+    @FindBy(xpath = "//input[@id='billing_city']")
+    public WebElement billingCity;
+    @FindBy(xpath = "//input[@id='shipping_city']")
+    public WebElement shippingCity;
+    @FindBy(xpath = "(//select)[2]")
+    public WebElement billingState;
+    @FindBy(xpath = "(//select)[2]")
+    public WebElement shippingState;
+    @FindBy(xpath = "//input[@id='billing_postcode']")
+    public WebElement billingZipCode;
+    @FindBy(xpath = "//input[@id='shipping_postcode']")
+    public WebElement shippingZipCode;
+    @FindBy(xpath = "//input[@id='billing_phone']")
+    public WebElement billingPhone;
+    @FindBy(xpath = "//input[@id='billing_email']")
+    public WebElement billingEmail;
+    @FindBy(xpath = "//button[@name='save_address']")
+    public WebElement saveAddress;
+    @FindBy(xpath = "//a[text()='My Account']")
+    public WebElement anaSayfaMyAccount;
+    @FindBy(xpath = "//*[@class=' alert alert-simple alert-icon alert-close-top alert-danger']")
+    public WebElement warningNegative;
+    @FindBy(xpath = "//a[text()='Edit Your Billing Address']")
+    public WebElement editYourBillingAddressButton;
+    @FindBy(xpath = "//*[@class='woocommerce-message alert alert-simple alert-icon alert-close-top alert-success']")
+    public WebElement warningPozitive;
 
 
 
@@ -297,7 +390,12 @@ public AlloverCommercePage(){
 
 
 
-    
+
+
+
+
+
+
 
   //Emre Yilmaz
   //Suleyman Nasirdinov
@@ -392,7 +490,112 @@ public AlloverCommercePage(){
 
 
 
+
     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
    //Suleyman Nasirdinov
    //Demir Bilmez
@@ -454,7 +657,143 @@ public AlloverCommercePage(){
 
 
 
+
     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -553,7 +892,111 @@ public AlloverCommercePage(){
 
 
 
+
     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     //Hafize Aktas
     //Ibrahim Akcal
 
@@ -625,10 +1068,338 @@ public AlloverCommercePage(){
 
 
 
+
     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     //Ibrahim Akcal
-    //Sihat Ferat Toktaş
+    //Mehmet Ali Obuz
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //Mehmet Ali Obuz
+    // Mecid
+
 
 
 
@@ -695,8 +1466,6 @@ public AlloverCommercePage(){
     
 
 
-    //Sihat Ferat Toktaş
-    //Mecid
 
 
 
@@ -760,7 +1529,73 @@ public AlloverCommercePage(){
 
 
 
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     //Mecid
     //Nalan Demir
@@ -824,7 +1659,141 @@ public AlloverCommercePage(){
 
 
 
+
     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -908,58 +1877,127 @@ public AlloverCommercePage(){
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     //Sema Malkoc
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 }
