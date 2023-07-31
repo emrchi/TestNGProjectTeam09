@@ -51,97 +51,97 @@ public AlloverCommercePage(){
     public WebElement advanced;
 
 
+    @FindBy(xpath = "//*[@id='pro_title']")
+    public WebElement productTitle;
 
+    @FindBy(xpath = "//*[@id='sku']")
+    public WebElement sku;
+    @FindBy(xpath = "//*[@id='manage_stock']")
+    public WebElement manageStock;
+    @FindBy(xpath = "(//*[@type='number'])[3]")
+    public WebElement stockStatus;
+    @FindBy(xpath = "//*[@id='sold_individually']")
+    public WebElement soldIndividually;
 
+    @FindBy(xpath = "//*[@name='draft-data']")
+    public WebElement draftData;
 
+    @FindBy(css = "span[class='wcicon-status-completed']")
+    public WebElement productSuccess;
 
+    @FindBy(xpath = "//*[@id=\"wcfm-products\"]/tbody/tr/td[4]")
+    public WebElement skugorunmesi;
 
+    @FindBy(xpath = "//*[@class='instock']")
+    public WebElement inStockOnline;
 
+    @FindBy(xpath = "//*[@id=\"wcfm_products_manage_form_shipping_head\"]/div")
+    public WebElement shipp1;
 
+    @FindBy(xpath = "//select[@id='_wcfmmp_processing_time']")
+    public WebElement processingTime;
 
+    @FindBy(xpath = "(//*[@class='page_collapsible_content_holder'])[5]")
+    public WebElement attributes;
 
+    @FindBy(xpath = "(//*[@class='wcfm-text wcfm_ele simple variable booking'])[1]")
+    public WebElement weight;
 
 
+    @FindBy(xpath = "//*[@value='Preview']")
+    public WebElement preview;
 
+    @FindBy(xpath = "//*[@class='nav-item additional_information_tab']")
+    public WebElement spefication;
 
+    @FindBy(xpath = "(//*[@class='woocommerce-product-attributes-item__value'])[1]")
+    public WebElement specsdisplay1;
 
+    @FindBy(xpath = "(//*[@class='woocommerce-product-attributes-item__value'])[2]")
+    public WebElement specsdisplay2;
 
+    @FindBy(xpath = "//*[@id='attributes_is_active_1']")
+    public WebElement colorSelected;
 
+    @FindBy(xpath = "//*[@title='Check to associate this attribute with the product']")
+    public WebElement activeSelected;
 
+    @FindBy(xpath = "(//*[@class='select2-selection select2-selection--multiple'])[2]")
+    public WebElement colorSec;
 
+    @FindBy(xpath = "//*[@id='attributes_is_active_2']")
+    public WebElement sizeSelected;
 
+    @FindBy(xpath = "//*[@id='is_virtual']")
+    public WebElement virtualSelected;
 
+    @FindBy(xpath = "//*[@id='is_downloadable']")
+    public WebElement downloadedselected;
 
 
+    @FindBy(xpath = "//*[@id='regular_price']")
+    public WebElement sales;
 
+    @FindBy(xpath = "//*[@id='sale_price']")
+    public WebElement prices;
 
+    @FindBy(xpath = "(//*[@class='wcfm-checkbox checklist_type_product_cat '])[3]")
+    public WebElement accessories;
 
+    @FindBy(xpath = "//*[@id='product_cats_checklist']")
+    public WebElement checklist;
 
+    @FindBy(xpath = "//*[@id=\"menu-item-browse\"]")
+    public WebElement mediaLibrary;
 
+    @FindBy(xpath = "(//*[@class='media-modal-icon'])[4]")
+    public WebElement resimIcon;
 
+    @FindBy(xpath = "//*[@id='featured_img_display']")
+    public WebElement resimsec;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    @FindBy(xpath = "//*[@class='button media-button button-primary button-large media-button-select']")
+    public WebElement selectButton;
 
 
 
@@ -198,10 +198,7 @@ public AlloverCommercePage(){
 
 
   //Ahmet Gul
-  //Emre Yilmaz
-
-
-
+  // Emre Yilmaz
     @FindBy(xpath = "//*[@name='login']")
     public WebElement loginButton;
     @FindBy(xpath = "//a[text()='Addresses']")
@@ -252,6 +249,9 @@ public AlloverCommercePage(){
     public WebElement editYourBillingAddressButton;
     @FindBy(xpath = "//*[@class='woocommerce-message alert alert-simple alert-icon alert-close-top alert-success']")
     public WebElement warningPozitive;
+
+
+
 
 
 
@@ -597,7 +597,7 @@ public AlloverCommercePage(){
 
 
 
-   //Suleyman Nasirdinov
+    //Suleyman Nasirdinov
    //Demir Bilmez
 
 
@@ -658,7 +658,7 @@ public AlloverCommercePage(){
 
 
 
-    
+
 
 
 
@@ -815,6 +815,7 @@ public AlloverCommercePage(){
     public WebElement verificationCode;
     @FindBy (xpath = "(//input)[5]")
     public WebElement resendCode;
+
     @FindBy (id = "password_strength")
     public WebElement tooShort;
     @FindBy (id = "password_strength")
@@ -996,8 +997,7 @@ public AlloverCommercePage(){
   
   
   
-  
-  //Hafize Aktas 
+  //Hafize Aktas
   //Ibrahim 
   
   
@@ -1463,7 +1463,6 @@ public AlloverCommercePage(){
 
 
 
-    
 
 
 
@@ -1597,7 +1596,8 @@ public AlloverCommercePage(){
 
 
 
-    //Mecid
+
+     //Mecid
     //Nalan Demir
 
 
@@ -1660,7 +1660,7 @@ public AlloverCommercePage(){
 
 
 
-    
+
 
 
 
@@ -1799,7 +1799,7 @@ public AlloverCommercePage(){
 
     //Nalan Demir
     //Sema Malkoc
-    @FindBy(xpath ="(//a[@class='nav-link active'])[2]" )
+    @FindBy(xpath ="(//a[@class='nav-link active'])[2]")
     public WebElement kullaniciUserName;
     @FindBy(xpath="//*[@name='password']" )
     public WebElement kullaniciPassWord;
@@ -1997,7 +1997,6 @@ public AlloverCommercePage(){
 
 
 
-    //Sema Malkoc
-
+   //Sema Malkoc
 
 }
