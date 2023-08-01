@@ -815,7 +815,6 @@ public AlloverCommercePage(){
     public WebElement verificationCode;
     @FindBy (xpath = "(//input)[5]")
     public WebElement resendCode;
-
     @FindBy (id = "password_strength")
     public WebElement tooShort;
     @FindBy (id = "password_strength")
@@ -1196,207 +1195,208 @@ public AlloverCommercePage(){
   
   
   
-  
+
+
     //Ibrahim
     //Mehmet Ali Obuz
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-      
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-    
-  
+    //Ferat
+    @FindBy(xpath = "(//input[@class='form-control'])[1]")
+    public WebElement searchBox;
+    @FindBy(xpath = "(//button[@type='submit'])[1]")
+    public WebElement searchButton;
+    @FindBy(xpath = "(//img[@class='zoomImg'])[2]")
+    public WebElement penapenImg;
+    @FindBy(xpath = "//button[@name='add-to-cart']")
+    public WebElement addToCartButton;
+    @FindBy(xpath = "(//i[@class='w-icon-cart'])[1]")
+    public WebElement cartButton;
+    @FindBy(xpath = "//*[text()='View cart']")
+    public WebElement viewCartButton;
+    @FindBy(xpath = "//button[@class='quantity-plus w-icon-plus']")
+    public WebElement plussButton;
+    @FindBy(xpath = "//button[@name='update_cart']")
+    public WebElement updateCartButton;
+    @FindBy(xpath = "//a[@class='checkout-button button alt wc-forward']")
+    public WebElement proceedToCheckOutButton;
+    @FindBy(xpath = "(//input[@name='payment_method'])[2]")
+    public WebElement payAtTheDoorRadioButton;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     //Mehmet Ali Obuz
     // Mecid
 
@@ -1883,6 +1883,8 @@ public AlloverCommercePage(){
 
 
 
+
+    //Sema Malkoc
 
 
 
