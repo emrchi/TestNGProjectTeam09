@@ -1198,8 +1198,7 @@ public AlloverCommercePage(){
 
 
     //Ibrahim
-    //Mehmet Ali Obuz
-    //Ferat
+    //Ferat Toktas
     @FindBy(xpath = "(//input[@class='form-control'])[1]")
     public WebElement searchBox;
     @FindBy(xpath = "(//button[@type='submit'])[1]")
@@ -1397,7 +1396,8 @@ public AlloverCommercePage(){
 
 
 
-    //Mehmet Ali Obuz
+    
+    //Ferhat Toktas
     // Mecid
 
 
