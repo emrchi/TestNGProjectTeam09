@@ -10,7 +10,7 @@ import utilities.ReusableMethods;
 
 public class US02_AynıHesaplaKayıtOlamama {
     @Test
-    public void testKayitliUsernameIleLoginOlamama() {
+    public void testUnableToRegisterWithRegisteredUserName() {
         // Anasayfaya git
         Driver.getDriver().get(ConfigReader.getProperty("allovercommerceUrl"));
         //Register butonunu tıkla
@@ -33,7 +33,7 @@ public class US02_AynıHesaplaKayıtOlamama {
     }
 
     @Test
-    public void testKayitliMailIleLoginOlamama() {
+    public void testUnableToRegisterWithRegisteredEmail() {
         // Anasayfaya git
         Driver.getDriver().get(ConfigReader.getProperty("allovercommerceUrl"));
         //Register butonunu tıkla

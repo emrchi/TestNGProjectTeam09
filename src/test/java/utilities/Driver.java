@@ -25,7 +25,7 @@ public class Driver {
      */
     }
 
-    static WebDriver driver;
+    public static WebDriver driver;
     public static WebDriver getDriver() {
         /*
         DRiver'i her cagirdigimiz da yeni bir pencere acilmasinin onune gecmek icin
@@ -57,7 +57,7 @@ public class Driver {
             }
 
             driver.manage().window().maximize();
-            driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+            driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(300));
         }
         return driver;
     }
