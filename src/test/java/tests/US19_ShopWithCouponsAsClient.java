@@ -20,9 +20,10 @@ public class US19_ShopWithCouponsAsClient {
 
         // Click search buton.
         alloverCommercePage.searchButton.click();
+        ReusableMethods.bekle(3);
 
         //Click first item image.
-                //alloverCommercePage.penapenImg.click(); --> Penapen diye sadece bir urun cikiyor
+        alloverCommercePage.searchForPenapenSecondImg.click();
 
         //Click "Add to cart" button.
         alloverCommercePage.addToCartButton.click();
@@ -40,17 +41,19 @@ public class US19_ShopWithCouponsAsClient {
 
         //Click "Update cart" button.
         alloverCommercePage.updateCartButton.click();
-        ReusableMethods.bekle(5);
+        ReusableMethods.bekle(3);
 
         //Click "Proceed to Checkout" button.
-        ReusableMethods.visibleWait(alloverCommercePage.proceedToCheckOutButton, 5);
-        alloverCommercePage.proceedToCheckOutButton.click();
+            //ReusableMethods.visibleWait(alloverCommercePage.proceedToCheckOutButton, 10);
+        ReusableMethods.scroll(alloverCommercePage.proceedToCheckOutButton);
+        ReusableMethods.click(alloverCommercePage.proceedToCheckOutButton);
         ReusableMethods.bekle(3);
 
         //Click "Pay at the door" button in your order menu.
         alloverCommercePage.payAtTheDoorRadioButton.click();
 
        //Click first name and write your firtname
+        alloverCommercePage.billingFirstName.sendKeys("Alex");
        //Click last name and write your lastname
        //Click country/region.
        //Click Street adress menu.
