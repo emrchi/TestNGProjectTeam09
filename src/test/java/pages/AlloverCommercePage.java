@@ -1203,8 +1203,8 @@ public AlloverCommercePage(){
     public WebElement searchBox;
     @FindBy(xpath = "(//button[@type='submit'])[1]")
     public WebElement searchButton;
-    @FindBy(xpath = "(//img[@class='zoomImg'])[2]")
-    public WebElement penapenImg;
+    @FindBy(xpath = "(//img[@class='attachment-woocommerce_thumbnail size-woocommerce_thumbnail'])[4]")
+    public WebElement searchForPenapenSecondImg;
     @FindBy(xpath = "//button[@name='add-to-cart']")
     public WebElement addToCartButton;
     @FindBy(xpath = "(//i[@class='w-icon-cart'])[1]")
@@ -1215,7 +1215,7 @@ public AlloverCommercePage(){
     public WebElement plussButton;
     @FindBy(xpath = "//button[@name='update_cart']")
     public WebElement updateCartButton;
-    @FindBy(xpath = "//a[@class='checkout-button button alt wc-forward']")
+    @FindBy(xpath = "//div[@class='wc-proceed-to-checkout']")
     public WebElement proceedToCheckOutButton;
     @FindBy(xpath = "(//input[@name='payment_method'])[2]")
     public WebElement payAtTheDoorRadioButton;
