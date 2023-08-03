@@ -50,16 +50,18 @@ public AlloverCommercePage(){
     @FindBy(xpath = "(//*[@class='page_collapsible_content_holder'])[8]")
     public WebElement advanced;
 
-
     @FindBy(xpath = "//*[@id='pro_title']")
     public WebElement productTitle;
 
     @FindBy(xpath = "//*[@id='sku']")
     public WebElement sku;
+
     @FindBy(xpath = "//*[@id='manage_stock']")
     public WebElement manageStock;
+
     @FindBy(xpath = "(//*[@type='number'])[3]")
     public WebElement stockStatus;
+
     @FindBy(xpath = "//*[@id='sold_individually']")
     public WebElement soldIndividually;
 
@@ -86,7 +88,6 @@ public AlloverCommercePage(){
 
     @FindBy(xpath = "(//*[@class='wcfm-text wcfm_ele simple variable booking'])[1]")
     public WebElement weight;
-
 
     @FindBy(xpath = "//*[@value='Preview']")
     public WebElement preview;
@@ -118,7 +119,6 @@ public AlloverCommercePage(){
     @FindBy(xpath = "//*[@id='is_downloadable']")
     public WebElement downloadedselected;
 
-
     @FindBy(xpath = "//*[@id='regular_price']")
     public WebElement sales;
 
@@ -134,35 +134,38 @@ public AlloverCommercePage(){
     @FindBy(xpath = "//*[@id=\"menu-item-browse\"]")
     public WebElement mediaLibrary;
 
-    @FindBy(xpath = "(//*[@class='media-modal-icon'])[4]")
+    @FindBy(xpath = "//*[@id=\"__attachments-view-54\"]/li[3]/div/div/div/img")
     public WebElement resimIcon;
 
+    @FindBy(xpath = "//*[@id=\"__attachments-view-128\"]/li[3]/div/div/div/img")
+    public WebElement resimIcon2;
     @FindBy(xpath = "//*[@id='featured_img_display']")
     public WebElement resimsec;
-
+    @FindBy(xpath = "//*[@id='gallery_img_gimage_0_display']")
+    public WebElement resimsec2;
     @FindBy(xpath = "//*[@class='button media-button button-primary button-large media-button-select']")
     public WebElement selectButton;
 
+    @FindBy(xpath = "//*[@class='wcfm_product_manager_general_fields']")
+    public WebElement urunGorunumStatus;
 
+    @FindBy(css = "div[id='wcfm_products_simple_submit']")
+    public WebElement imgfailed;
 
+    @FindBy(xpath = "//*[@name='submit-data']")
+    public WebElement submitButton;
 
+    @FindBy(xpath = "//*[text()='Product Successfully Saved.']")
+    public WebElement productSucces;
 
+    @FindBy(xpath = "//*[text()='Product cat: This field is required.']")
+    public WebElement productTitleFailed1;
 
+    @FindBy(xpath = "//*[text()='Featured img: This field is required.']")
+    public WebElement imgFailed1;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    @FindBy(xpath = "//*[text()='Gallery Images: This field is required.']")
+    public WebElement galleryİmage;
 
 
 
