@@ -196,10 +196,6 @@ public AlloverCommercePage(){
 
 
 
-
-
-
-
   //Ahmet Gul
   // Emre Yilmaz
     @FindBy(xpath = "//*[@name='login']")
@@ -997,7 +993,8 @@ public AlloverCommercePage(){
   
   
   
-  
+
+    
   
   //Hafize Aktas
   //Ibrahim 
@@ -1198,7 +1195,6 @@ public AlloverCommercePage(){
   
   
   
-
 
     //Ibrahim
     //Ferat Toktas
@@ -1887,7 +1883,7 @@ public AlloverCommercePage(){
 
 
 
-    //Sema Malkoc
+    
 
 
 
