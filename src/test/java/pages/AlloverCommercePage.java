@@ -147,7 +147,55 @@ public AlloverCommercePage(){
 
 
 
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   //Ahmet Gul
   //Emre Yilmaz
     @FindBy(xpath = "(//input[@id='username'])[1]")
@@ -299,7 +347,56 @@ public AlloverCommercePage(){
 
     
 
-  //Emre Yilmaz
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //Emre Yilmaz
   //Suleyman Nasirdinov
 
 
@@ -394,8 +491,171 @@ public AlloverCommercePage(){
 
     
 
-   //Suleyman Nasirdinov
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //Suleyman Nasirdinov
    //Demir Bilmez
+
+
+    @FindBy(xpath = "//span[text()='Sign In']")
+    public WebElement signInButton;
+    @FindBy(xpath = "//input[@id='username']")
+    public WebElement userNameArea;
+    @FindBy(xpath = "//input[@id='password']")
+    public WebElement passwordArea;
+    @FindBy(xpath = "//button[@type='submit']")
+    public WebElement signInSubmit;
+    @FindBy(xpath = "(//*[text()='My Account'])[4]")
+    public WebElement myAccountClick;
+    @FindBy(xpath = "//*[@class='icon-box-icon icon-addresses']")
+    public WebElement addressessButton;
+    @FindBy(xpath = "(//*[@class='edit btn btn-link btn-primary btn-underline mb-4'])[2]")
+    public WebElement addShippingAddress;
+    @FindBy(xpath = "(//*[@class='edit btn btn-link btn-primary btn-underline mb-4'])[2]")
+    public WebElement editYourshippingAdress;
+    @FindBy(xpath = "//*[@id='shipping_first_name']")
+    public WebElement firstName;
+    @FindBy(xpath = "//*[@id='shipping_last_name']")
+    public WebElement lastName;
+    @FindBy(xpath = "(//span[@class='select2-selection__placeholder'])[1]")
+    public WebElement country;
+    @FindBy(xpath = "//*[@class='select2-search__field']")
+    public WebElement countryArea;
+    @FindBy(xpath = "//*[@id='shipping_address_1']")
+    public WebElement streetAddress;
+    @FindBy(xpath = "//*[@id='shipping_city']")
+    public WebElement shippingCity;
+    @FindBy(xpath = "(//*[@class='select2-selection__placeholder'])[2]")
+    public WebElement stateClick;
+    @FindBy(xpath = "//*[@class='select2-search__field']")
+    public WebElement stateArea;
+    @FindBy(xpath = "//*[@id='shipping_postcode']")
+    public WebElement zipCodeArea;
+    @FindBy(xpath = "//span[@class='select2-selection__placeholder']")
+    public WebElement province;
+    @FindBy(xpath = "//input[@class='select2-search__field']")
+    public WebElement provinceArea;
+    @FindBy(xpath = "//*[@class='woocommerce-message alert alert-simple alert-icon alert-close-top alert-success']")
+    public WebElement verifyMessage;
+
+    @FindBy(xpath = "//select[@id='shipping_country']")
+    public WebElement countryDdm;
+    @FindBy(xpath = "//select[@id='shipping_state']")
+    public WebElement provinceDdm;
+
+
+    @FindBy(xpath = "//*[@class='btn btn-dark btn-rounded btn-sm']")
+    public WebElement saveAddress;
+
+    @FindBy(xpath = "//select[@id='shipping_state']")
+    public WebElement stateDdm;
+
+    @FindBy(xpath = "//*[@class=' alert alert-simple alert-icon alert-close-top alert-danger']")
+    public WebElement errorMessage;
+
 
 
 
@@ -455,6 +715,84 @@ public AlloverCommercePage(){
 
 
     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -554,6 +892,110 @@ public AlloverCommercePage(){
 
 
     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     //Hafize Aktas
     //Ibrahim Akcal
 
@@ -627,6 +1069,133 @@ public AlloverCommercePage(){
 
     
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     //Ibrahim Akcal
     //Sihat Ferat Toktaş
 
@@ -695,6 +1264,138 @@ public AlloverCommercePage(){
     
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     //Sihat Ferat Toktaş
     //Mecid
 
@@ -762,6 +1463,139 @@ public AlloverCommercePage(){
 
     
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     //Mecid
     //Nalan Demir
 
@@ -828,6 +1662,140 @@ public AlloverCommercePage(){
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     //Nalan Demir
     //Sema Malkoc
     @FindBy(xpath ="(//a[@class='nav-link active'])[2]" )
@@ -878,6 +1846,127 @@ public AlloverCommercePage(){
     public WebElement negativeVerify;
     @FindBy(xpath ="//*[@name='email']" )
     public WebElement kayitliEmail;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
