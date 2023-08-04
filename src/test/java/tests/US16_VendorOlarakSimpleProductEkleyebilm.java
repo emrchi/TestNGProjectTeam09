@@ -10,6 +10,7 @@ import pages.AlloverCommercePage;
 import utilities.ConfigReader;
 import utilities.Driver;
 import utilities.ExtentReport;
+import utilities.ReusableMethods;
 
 import static utilities.Driver.driver;
 import static utilities.ReusableMethods.scrollEnd;
