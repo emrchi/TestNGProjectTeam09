@@ -83,7 +83,7 @@ public class US05_HesapBilgileriDüzenleme extends ExtentReport {
         extentTest.info("Password başarılı bir şekilde değiştirildi");
         //'Account details changed successfully' yazısının göründügünü doğrula
         Assert.assertTrue(alloverCommercePage.changeVerify.isDisplayed());
-        extentTest.info("Hesap bilgileri başarılı bir şekilde değiştirildi");
+        extentTest.pass("Hesap bilgileri başarılı bir şekilde değiştirildi");
     }
 
 
