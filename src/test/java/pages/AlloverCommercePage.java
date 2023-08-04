@@ -1,15 +1,13 @@
 package pages;
 
 
-
-import org.openqa.selenium.By;
-
-
-
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+
+
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
+
 
 public class AlloverCommercePage {
 public AlloverCommercePage(){
@@ -166,12 +164,6 @@ public AlloverCommercePage(){
 
     @FindBy(xpath = "//*[text()='Gallery Images: This field is required.']")
     public WebElement galleryİmage;
-
-
-
-
-
-
 
 
 
@@ -626,7 +618,7 @@ public AlloverCommercePage(){
     @FindBy(xpath = "//*[@id='shipping_address_1']")
     public WebElement streetAddress;
     @FindBy(xpath = "//*[@id='shipping_city']")
-    public WebElement shippingCity;
+    public WebElement shippingCity1;
     @FindBy(xpath = "(//*[@class='select2-selection__placeholder'])[2]")
     public WebElement stateClick;
     @FindBy(xpath = "//*[@class='select2-search__field']")
@@ -647,7 +639,7 @@ public AlloverCommercePage(){
 
 
     @FindBy(xpath = "//*[@class='btn btn-dark btn-rounded btn-sm']")
-    public WebElement saveAddress;
+    public WebElement saveAddress1;
 
     @FindBy(xpath = "//select[@id='shipping_state']")
     public WebElement stateDdm;
@@ -1194,8 +1186,9 @@ public AlloverCommercePage(){
 
 
 
-  
-  
+
+
+    //Ibrahim Akcal
     //Ferat Toktas
     @FindBy(xpath = "(//input[@class='form-control'])[1]")
     public WebElement searchBox;
@@ -1395,9 +1388,1259 @@ public AlloverCommercePage(){
 
 
 
-
     //Ferat Toktaş
     //Mecid
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //Mecid
+    //Nalan Demir
+    @FindBy(xpath = "(//*[text()='My Account'])[2]")
+    public WebElement myaccount;
+    @FindBy(xpath = "//*[text()='Dashboard']")
+    public WebElement dashboard;
+    @FindBy(xpath = "(//*[text()='Account details'])[1]")
+    public WebElement accountDetails;
+    @FindBy(xpath = "(//*[@type='text'])[3]")
+    public WebElement displayName;
+    @FindBy(xpath = "(//*[@type='text'])[2]")
+    public WebElement changeLastName;
+    @FindBy(xpath = "(//*[@type='text'])[1]")
+    public WebElement changeName;
+    @FindBy(xpath = "(//input[@type='email'])[1]")
+    public WebElement changeEmail;
+    @FindBy(xpath ="//*[@id='user_description-html']")
+    public WebElement Text;
+    @FindBy(xpath="//*[@id='user_description']")
+    public WebElement biography;
+    @FindBy(xpath="(//*[@type='button'])[3]")
+    public WebElement B;
+    @FindBy(xpath="(//*[@type='password'])[1]")
+    public WebElement changePasswrd1;
+    @FindBy(xpath="(//*[@type='password'])[2]")
+    public WebElement changePaswrd2;
+    @FindBy(xpath="(//*[@type='password'])[3]")
+    public WebElement changePasswrd3;
+    @FindBy(xpath="//div[@ class=\"woocommerce-message alert alert-simple alert-icon alert-close-top alert-success\"]")
+    public WebElement changeVerify;
+    @FindBy(xpath="(//*[@type='search'])[1]")
+    public WebElement searchBox1;
+    @FindBy(xpath="//*[@alt='Pen']")
+    public WebElement product;
+    @FindBy(xpath="//*[@alt='Pen']")
+    public WebElement addToCart;
+    @FindBy(xpath="//*[@class='w-icon-cart']")
+    public WebElement cartIcon;
+    @FindBy(xpath="//*[@class='button checkout wc-forward']")
+    public WebElement checkout;
+    @FindBy(xpath="//*[@type='number']")
+    public WebElement quantityBox;
+    @FindBy(xpath="//*[@for='billing_country']")
+    public WebElement country1;
+    @FindBy(xpath="(//h4)[3]")
+    public WebElement paymentMethods;
+    @FindBy(xpath="//*[@class='woocommerce-notice woocommerce-notice--success woocommerce-thankyou-order-received order-success']")
+    public WebElement thankYouText;
+    @FindBy(xpath="//*[@id='place_order']")
+    public WebElement placeOrder;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //Nalan Demir
+    //Sema Malkoc
+    @FindBy(xpath ="(//a[@class='nav-link active'])[2]")
+    public WebElement kullaniciUserName;
+    @FindBy(xpath="//*[@name='password']" )
+    public WebElement kullaniciPassWord;
+    @FindBy(xpath ="" )
+    public WebElement kullaniciEmail;
+    @FindBy(xpath ="//a[@class='login inline-type']" )
+    public WebElement anasayfaSignIn;
+    @FindBy(xpath ="//a[@class='register inline-type']" )
+    public WebElement anasayfaRegister;
+
+    @FindBy(xpath ="//*[@name='rememberme']" )
+    public WebElement rememberMeBox;
+
+    @FindBy(xpath ="" )
+    public WebElement lostYourPasswordText;
+    @FindBy(xpath ="(//p[@class='submit-status'])[1]" )
+    public WebElement wrongUsernameOrPasswordText;
+    @FindBy(xpath ="(//button[@type='submit'])[2]" )
+    public WebElement SignInOnay;
+
+    @FindBy(xpath ="//a[@href='signup']" )
+    public WebElement signUpButton;
+
+    @FindBy(id="reg_username")
+    public WebElement fakeUserName;
+    @FindBy(xpath ="//*[@name='email']" )
+    public WebElement fakeEmail;
+    @FindBy(xpath ="(//*[@name='password'])[2]" )
+    public WebElement signUpPassword;
+    @FindBy(xpath ="//*[@id='register-policy']" )
+    public WebElement IagreeToText;
+
+    @FindBy(linkText ="Become a Vendor" )
+    public WebElement becomeAvendorText;
+    @FindBy(xpath ="//*[@name='register']" )
+    public WebElement SignUpOnay;
+    @FindBy(xpath ="//*[text()='Sign Out']" )
+    public WebElement verify;
+    @FindBy(id ="reg_username" )
+    public WebElement kayitliUserName;
+
+    @FindBy(xpath="(//*[@class='submit-status'])[2]" )
+    public WebElement negativeVerify;
+    @FindBy(xpath ="//*[@name='email']" )
+    public WebElement kayitliEmail;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//nalan demir
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1796,56 +3039,7 @@ public AlloverCommercePage(){
   
   
   
-    //Nalan Demir
-    //Sema Malkoc
-    @FindBy(xpath ="(//a[@class='nav-link active'])[2]")
-    public WebElement kullaniciUserName;
-    @FindBy(xpath="//*[@name='password']" )
-    public WebElement kullaniciPassWord;
-    @FindBy(xpath ="" )
-    public WebElement kullaniciEmail;
-    @FindBy(xpath ="//a[@class='login inline-type']" )
-    public WebElement anasayfaSignIn;
-    @FindBy(xpath ="//a[@class='register inline-type']" )
-    public WebElement anasayfaRegister;
 
-    @FindBy(xpath ="//*[@name='rememberme']" )
-    public WebElement rememberMeBox;
-
-    @FindBy(xpath ="" )
-    public WebElement lostYourPasswordText;
-    @FindBy(xpath ="(//p[@class='submit-status'])[1]" )
-    public WebElement wrongUsernameOrPasswordText;
-    @FindBy(xpath ="(//button[@type='submit'])[2]" )
-    public WebElement SignInOnay;
-    @FindBy(xpath ="(//a[@class='nav-link active'])[1]" )
-    public WebElement signInButton;
-
-    @FindBy(xpath ="//a[@href='signup']" )
-    public WebElement signUpButton;
-
-    @FindBy(id="reg_username")
-    public WebElement fakeUserName;
-    @FindBy(xpath ="//*[@name='email']" )
-    public WebElement fakeEmail;
-    @FindBy(xpath ="(//*[@name='password'])[2]" )
-    public WebElement signUpPassword;
-    @FindBy(xpath ="//*[@id='register-policy']" )
-    public WebElement IagreeToText;
-
-    @FindBy(linkText ="Become a Vendor" )
-    public WebElement becomeAvendorText;
-    @FindBy(xpath ="//*[@name='register']" )
-    public WebElement SignUpOnay;
-    @FindBy(xpath ="//*[text()='Sign Out']" )
-    public WebElement verify;
-    @FindBy(id ="reg_username" )
-    public WebElement kayitliUserName;
-
-    @FindBy(xpath="(//*[@class='submit-status'])[2]" )
-    public WebElement negativeVerify;
-    @FindBy(xpath ="//*[@name='email']" )
-    public WebElement kayitliEmail;
 
 
 
@@ -2018,5 +3212,6 @@ public AlloverCommercePage(){
 
 
    //Sema Malkoc
+
 
 }

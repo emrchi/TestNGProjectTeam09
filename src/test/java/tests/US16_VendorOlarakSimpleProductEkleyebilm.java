@@ -1,7 +1,5 @@
 package tests;
 
-import com.aventstack.extentreports.ExtentReports;
-import com.beust.ah.A;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
@@ -12,7 +10,6 @@ import pages.AlloverCommercePage;
 import utilities.ConfigReader;
 import utilities.Driver;
 import utilities.ExtentReport;
-import utilities.ReusableMethods;
 
 import static utilities.Driver.driver;
 import static utilities.ReusableMethods.scrollEnd;

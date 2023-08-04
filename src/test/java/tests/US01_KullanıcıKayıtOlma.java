@@ -1,16 +1,12 @@
 package tests;
 
 import com.github.javafaker.Faker;
-import org.openqa.selenium.Keys;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.AlloverCommercePage;
 import utilities.ConfigReader;
 import utilities.Driver;
 import utilities.ExtentReport;
-import utilities.ReusableMethods;
-
-import java.security.Key;
 
 
 public class US01_KullanıcıKayıtOlma extends ExtentReport {

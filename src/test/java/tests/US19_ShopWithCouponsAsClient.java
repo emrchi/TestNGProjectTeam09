@@ -1,12 +1,10 @@
 package tests;
 
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 import pages.AlloverCommercePage;
 import utilities.ConfigReader;
 import utilities.Driver;
-import utilities.ReusableMethods;
 
 public class US19_ShopWithCouponsAsClient {
 
@@ -18,7 +16,7 @@ public class US19_ShopWithCouponsAsClient {
         // Click SearchBox line.
         // Write Penapen.
         AlloverCommercePage alloverCommercePage=new AlloverCommercePage();
-        alloverCommercePage.searchBox.sendKeys("Penapen");
+        alloverCommercePage.searchBox1.sendKeys("Penapen");
 
         // Click search buton.
         alloverCommercePage.searchButton.click();

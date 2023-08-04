@@ -3,19 +3,14 @@ package tests;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import org.testng.asserts.SoftAssert;
 import pages.AlloverCommercePage;
 import utilities.ConfigReader;
 import utilities.Driver;
 import utilities.ExtentReport;
-import utilities.ReusableMethods;
 
-import java.security.Key;
-import java.util.Collections;
 import java.util.Set;
 
 import static utilities.Driver.driver;

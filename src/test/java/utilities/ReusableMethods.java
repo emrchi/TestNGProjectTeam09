@@ -18,9 +18,18 @@ import java.time.Duration;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+
+
+
+
 import static utilities.ExtentReport.extentTest;
 
+
 public class ReusableMethods {
+
+
+
+
 
         //Shipping adress ekleme
         public static void shippingAddressAdd (String name, String surname, String country, String street, String
@@ -336,6 +345,7 @@ public class ReusableMethods {
             System.out.println("Attribute Value: = " + attribute_Value);
 
         }
+
 
         //File Upload Robot Class
         public static void uploadFile (String dosyaYolu){
