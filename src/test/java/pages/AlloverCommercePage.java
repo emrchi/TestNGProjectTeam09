@@ -399,42 +399,122 @@ public AlloverCommercePage(){
 
     //Emre Yilmaz
     //Suleyman Nasirdinov
+//        @FindBy(xpath = "//*[text()='Sign In']")
+//        public WebElement signInButton;
 
+        @FindBy(xpath = "//*[@id='username']")
+        public WebElement userName;
 
+        @FindBy(xpath = "//*[@value='Sign In']")
+        public WebElement signIn;
 
+        @FindBy(xpath = "//*[@value='Sign In']")
+        public WebElement signInButonu;
 
+        @FindBy(xpath = "(//h2)[12]")
+        public WebElement top20BestSeller;
 
+        @FindBy(xpath = "//h3//a")
+        public WebElement earphoneProduct;
 
+        @FindBy(xpath = "//*[@name='add-to-cart']")
+        public WebElement addToCartt;
 
+        @FindBy(xpath = "//*[@type='search']")
+        public WebElement searchBox;
 
+        @FindBy(xpath = "(//img)[3]")
+        public WebElement firstProduct;
 
+        @FindBy(xpath = "//*[@name='add-to-cart']")
+        public WebElement addToCartKazak;
 
+//        @FindBy(xpath = "(//i)[6]")
+//        public WebElement cartButton;
 
+        @FindBy(xpath = "(//p//a)[1]")
+        public WebElement viewCart;
 
+        @FindBy(xpath = "(//*[text()='Shopping Cart'])[2]")
+        public WebElement verifyShoppingCart;
 
+        @FindBy(xpath = "//*[@class='checkout-button button alt wc-forward']")
+        public WebElement proceedToCheckout;
 
+        @FindBy(xpath = "//*[text()='Order Complete']")
+        public WebElement verifyOrderComplete;
 
+        @FindBy(xpath = "//*[@id='billing_first_name']")
+        public WebElement billingFirstNameInfo;
 
+        @FindBy(xpath = "//*[@id='billing_last_name']")
+        public WebElement billingLastNameInfo;
+        @FindBy(xpath = "(//select)[1]")
+        public WebElement billingCountryName;
+        @FindBy(xpath = "//*[@id='billing_address_1']")
+        public WebElement billingAddressInfo;
 
+        @FindBy(xpath = "//*[@name='billing_postcode']")
+        public WebElement billingPostCodeInfo;
 
+        @FindBy(xpath = "//*[@name='billing_city']")
+        public WebElement billingCityName;
 
+        @FindBy(xpath = "//*[@title='İzmir']")
+        public WebElement billingCityNamee;
 
+        @FindBy(xpath = "//*[@name='billing_phone']")
+        public WebElement billingPhoneNumber;
 
+        @FindBy(xpath = "//*[@name='billing_email']")
+        public WebElement billingEmailInfo;
 
+        @FindBy(xpath = "//*[text()='info@allovercommerce.com']")
+        public WebElement eMailTextBox;
 
+        @FindBy(xpath = "(//h3)[3]")
+        public WebElement totalAmount;
+        @FindBy(xpath = "(//*[@type='radio'])[1]")
+        public WebElement selectRadioButton;
 
+        @FindBy(xpath = "(//label)[20]")
+        public WebElement payAtTheDoorButton;
 
+        @FindBy(xpath = "//*[@data-value='Place order']")
+        public WebElement placeOrderButton;
 
+        @FindBy(xpath = "//p[@class='woocommerce-notice woocommerce-notice--success woocommerce-thankyou-order-received order-success']")
+        public WebElement thankYouYazisi;
 
+        @FindBy(xpath = "//a[text()='My Orders']")
+        public WebElement myOrdersButton;
 
+        @FindBy(xpath = "(//h4)[2]")
+        public WebElement orderView;
 
+        @FindBy(xpath = "(//*[@id='menu-item-1079']")
+        public WebElement myAccountButton;
 
+        @FindBy(xpath = "//*[text()='Store Manager']")
+        public WebElement storeManagerButton;
 
+        @FindBy(xpath = "(//*[@class='text'])[6]")
+        public WebElement couponsButton;
 
+        @FindBy(xpath = "(//*[@class='text'])[18]")
+        public WebElement addCouponsButton;
 
+        @FindBy(xpath = "(//*[@class='wcfm-text wcfm_ele'])[1]")
+        public WebElement codeButton;
 
+        @FindBy(xpath = "//*[@name='description']")
+        public WebElement descriptionButton;
 
+        @FindBy(xpath = "(//select)[1]")
+        public WebElement percentageDiscount;
 
+        @FindBy(xpath = "(//*[@class='text'])[18]")
+        public WebElement e;
 
 
 
@@ -491,7 +571,47 @@ public AlloverCommercePage(){
 
 
 
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
