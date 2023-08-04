@@ -1,10 +1,10 @@
 package tests;
 
+import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 import pages.AlloverCommercePage;
 import utilities.ConfigReader;
 import utilities.Driver;
-import utilities.ReusableMethods;
 
 public class US19_ShopWithCouponsAsClient {
 
@@ -16,11 +16,11 @@ public class US19_ShopWithCouponsAsClient {
         // Click SearchBox line.
         // Write Penapen.
         AlloverCommercePage alloverCommercePage=new AlloverCommercePage();
-        alloverCommercePage.searchBox.sendKeys("Penapen");
+        alloverCommercePage.searchBox1.sendKeys("Penapen");
 
         // Click search buton.
         alloverCommercePage.searchButton.click();
-        ReusableMethods.bekle(3);
+        //ReusableMethods.bekle(3);
 
         //Click first item image.
         alloverCommercePage.searchForPenapenSecondImg.click();
@@ -41,15 +41,15 @@ public class US19_ShopWithCouponsAsClient {
 
         //Click "Update cart" button.
         alloverCommercePage.updateCartButton.click();
-        ReusableMethods.bekle(3);
+        ReusableMethods.bekle(6);
 
         //Click "Proceed to Checkout" button.
-            //ReusableMethods.visibleWait(alloverCommercePage.proceedToCheckOutButton, 10);
-        ReusableMethods.scroll(alloverCommercePage.proceedToCheckOutButton);
+        Actions actions = new Actions(Driver.getDriver());
+        actions.scrollByAmount(0,700).perform();
         ReusableMethods.click(alloverCommercePage.proceedToCheckOutButton);
-        ReusableMethods.bekle(3);
 
         //Click "Pay at the door" button in your order menu.
+        actions.scrollByAmount(0,700).perform();
         alloverCommercePage.payAtTheDoorRadioButton.click();
 
        //Click first name and write your firtname

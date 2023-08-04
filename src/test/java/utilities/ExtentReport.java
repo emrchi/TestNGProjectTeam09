@@ -44,13 +44,16 @@ public abstract class ExtentReport {
             extentTest.skip("Test Case is skipped: " + result.getName());
         }
 
-         //Driver.closeDriver();
-
-
-
-
-      //  @AfterTest(alwaysRun = true)
-      //  public void tearDownTest () {
-            extentReports.flush();
-        }
+        Driver.closeDriver();
     }
+
+
+    @AfterTest(alwaysRun = true)
+    public void tearDownTest() {
+        extentReports.flush();
+    }
+
+}
+
+
+

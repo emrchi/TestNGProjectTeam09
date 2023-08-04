@@ -1,15 +1,13 @@
 package pages;
 
 
-
-import org.openqa.selenium.By;
-
-
-
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+
+
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
+
 
 public class AlloverCommercePage {
 public AlloverCommercePage(){
@@ -50,16 +48,18 @@ public AlloverCommercePage(){
     @FindBy(xpath = "(//*[@class='page_collapsible_content_holder'])[8]")
     public WebElement advanced;
 
-
     @FindBy(xpath = "//*[@id='pro_title']")
     public WebElement productTitle;
 
     @FindBy(xpath = "//*[@id='sku']")
     public WebElement sku;
+
     @FindBy(xpath = "//*[@id='manage_stock']")
     public WebElement manageStock;
+
     @FindBy(xpath = "(//*[@type='number'])[3]")
     public WebElement stockStatus;
+
     @FindBy(xpath = "//*[@id='sold_individually']")
     public WebElement soldIndividually;
 
@@ -86,7 +86,6 @@ public AlloverCommercePage(){
 
     @FindBy(xpath = "(//*[@class='wcfm-text wcfm_ele simple variable booking'])[1]")
     public WebElement weight;
-
 
     @FindBy(xpath = "//*[@value='Preview']")
     public WebElement preview;
@@ -118,7 +117,6 @@ public AlloverCommercePage(){
     @FindBy(xpath = "//*[@id='is_downloadable']")
     public WebElement downloadedselected;
 
-
     @FindBy(xpath = "//*[@id='regular_price']")
     public WebElement sales;
 
@@ -134,36 +132,38 @@ public AlloverCommercePage(){
     @FindBy(xpath = "//*[@id=\"menu-item-browse\"]")
     public WebElement mediaLibrary;
 
-    @FindBy(xpath = "(//*[@class='media-modal-icon'])[4]")
+    @FindBy(xpath = "//*[@id=\"__attachments-view-54\"]/li[3]/div/div/div/img")
     public WebElement resimIcon;
 
+    @FindBy(xpath = "//*[@id=\"__attachments-view-128\"]/li[3]/div/div/div/img")
+    public WebElement resimIcon2;
     @FindBy(xpath = "//*[@id='featured_img_display']")
     public WebElement resimsec;
-
+    @FindBy(xpath = "//*[@id='gallery_img_gimage_0_display']")
+    public WebElement resimsec2;
     @FindBy(xpath = "//*[@class='button media-button button-primary button-large media-button-select']")
     public WebElement selectButton;
 
+    @FindBy(xpath = "//*[@class='wcfm_product_manager_general_fields']")
+    public WebElement urunGorunumStatus;
 
+    @FindBy(css = "div[id='wcfm_products_simple_submit']")
+    public WebElement imgfailed;
 
+    @FindBy(xpath = "//*[@name='submit-data']")
+    public WebElement submitButton;
 
+    @FindBy(xpath = "//*[text()='Product Successfully Saved.']")
+    public WebElement productSucces;
 
+    @FindBy(xpath = "//*[text()='Product cat: This field is required.']")
+    public WebElement productTitleFailed1;
 
+    @FindBy(xpath = "//*[text()='Featured img: This field is required.']")
+    public WebElement imgFailed1;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    @FindBy(xpath = "//*[text()='Gallery Images: This field is required.']")
+    public WebElement galleryİmage;
 
 
 
@@ -249,6 +249,9 @@ public AlloverCommercePage(){
     public WebElement editYourBillingAddressButton;
     @FindBy(xpath = "//*[@class='woocommerce-message alert alert-simple alert-icon alert-close-top alert-success']")
     public WebElement warningPozitive;
+
+
+
 
 
 
@@ -595,13 +598,63 @@ public AlloverCommercePage(){
 
 
     //Suleyman Nasirdinov
-   //Demir Bilmez
+//Demir Bilmez
 
+    @FindBy(xpath = "//span[text()='Sign In']")
+    public WebElement signInButton;
+    @FindBy(xpath = "//input[@id='username']")
+    public WebElement userNameArea;
+    @FindBy(xpath = "//input[@id='password']")
+    public WebElement passwordArea;
+    @FindBy(xpath = "//button[@type='submit']")
+    public WebElement signInSubmit;
+    @FindBy(xpath = "(//*[text()='My Account'])[4]")
+    public WebElement myAccountClick;
+    @FindBy(xpath = "//*[@class='icon-box-icon icon-addresses']")
+    public WebElement addressessButton;
+    @FindBy(xpath = "(//*[@class='edit btn btn-link btn-primary btn-underline mb-4'])[2]")
+    public WebElement addShippingAddress;
+    @FindBy(xpath = "(//*[@class='edit btn btn-link btn-primary btn-underline mb-4'])[2]")
+    public WebElement editYourshippingAdress;
+    @FindBy(xpath = "//*[@id='shipping_first_name']")
+    public WebElement firstName;
+    @FindBy(xpath = "//*[@id='shipping_last_name']")
+    public WebElement lastName;
+    @FindBy(xpath = "(//span[@class='select2-selection__placeholder'])[1]")
+    public WebElement country;
+    @FindBy(xpath = "//*[@class='select2-search__field']")
+    public WebElement countryArea;
+    @FindBy(xpath = "//*[@id='shipping_address_1']")
+    public WebElement streetAddress;
+    @FindBy(xpath = "//*[@id='shipping_city']")
+    public WebElement shippingCity1;
+    @FindBy(xpath = "(//*[@class='select2-selection__placeholder'])[2]")
+    public WebElement stateClick;
+    @FindBy(xpath = "//*[@class='select2-search__field']")
+    public WebElement stateArea;
+    @FindBy(xpath = "//*[@id='shipping_postcode']")
+    public WebElement zipCodeArea;
+    @FindBy(xpath = "//span[@class='select2-selection__placeholder']")
+    public WebElement province;
+    @FindBy(xpath = "//input[@class='select2-search__field']")
+    public WebElement provinceArea;
+    @FindBy(xpath = "//*[@class='woocommerce-message alert alert-simple alert-icon alert-close-top alert-success']")
+    public WebElement verifyMessage;
 
+    @FindBy(xpath = "//select[@id='shipping_country']")
+    public WebElement countryDdm;
+    @FindBy(xpath = "//select[@id='shipping_state']")
+    public WebElement provinceDdm;
 
 
+    @FindBy(xpath = "//*[@class='btn btn-dark btn-rounded btn-sm']")
+    public WebElement saveAddress1;
 
+    @FindBy(xpath = "//select[@id='shipping_state']")
+    public WebElement stateDdm;
 
+    @FindBy(xpath = "//*[@class=' alert alert-simple alert-icon alert-close-top alert-danger']")
+    public WebElement errorMessage;
 
 
 
@@ -661,6 +714,7 @@ public AlloverCommercePage(){
 
 
 
+    
 
 
 
@@ -742,61 +796,10 @@ public AlloverCommercePage(){
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  
     //Demir Bilmez
     //Hafize Aktas
-    @FindBy (xpath = "(//span)[14]" )
+   @FindBy (xpath = "(//span)[14]" )
     public WebElement register;
     @FindBy (xpath = "//*[@class = 'register_as_vendor']")
     public WebElement signUpAsVendor;
@@ -822,379 +825,379 @@ public AlloverCommercePage(){
     public WebElement strong;
 
 
- 
-  
-  
-  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  //Hafize Aktas
-  //Ibrahim 
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
 
 
-    //Ibrahim
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //Hafize Aktas
+    //Ibrahim Akcal
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //Ibrahim Akcal
     //Ferat Toktas
     @FindBy(xpath = "(//input[@class='form-control'])[1]")
     public WebElement searchBox01;
@@ -1289,111 +1292,111 @@ public AlloverCommercePage(){
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     //Ferhat Toktas
     // Mecid
     @FindBy(xpath = "//*[@class='wcfm_menu_toggler wcfmfa fa-bars text_tip']")
@@ -1420,8 +1423,6 @@ public AlloverCommercePage(){
 
 
 
-    @FindBy(xpath = "//span[@id='select2-billing_state-container']")
-    public WebElement province;
 
 
 
@@ -1596,16 +1597,57 @@ public AlloverCommercePage(){
 
 
 
-
-
-
-
-
-
-
-
-     //Mecid
+    //Mecid
     //Nalan Demir
+    @FindBy(xpath = "(//*[text()='My Account'])[2]")
+    public WebElement myaccount;
+    @FindBy(xpath = "//*[text()='Dashboard']")
+    public WebElement dashboard;
+    @FindBy(xpath = "(//*[text()='Account details'])[1]")
+    public WebElement accountDetails;
+    @FindBy(xpath = "(//*[@type='text'])[3]")
+    public WebElement displayName;
+    @FindBy(xpath = "(//*[@type='text'])[2]")
+    public WebElement changeLastName;
+    @FindBy(xpath = "(//*[@type='text'])[1]")
+    public WebElement changeName;
+    @FindBy(xpath = "(//input[@type='email'])[1]")
+    public WebElement changeEmail;
+    @FindBy(xpath ="//*[@id='user_description-html']")
+    public WebElement Text;
+    @FindBy(xpath="//*[@id='user_description']")
+    public WebElement biography;
+    @FindBy(xpath="(//*[@type='button'])[3]")
+    public WebElement B;
+    @FindBy(xpath="(//*[@type='password'])[1]")
+    public WebElement changePasswrd1;
+    @FindBy(xpath="(//*[@type='password'])[2]")
+    public WebElement changePaswrd2;
+    @FindBy(xpath="(//*[@type='password'])[3]")
+    public WebElement changePasswrd3;
+    @FindBy(xpath="//div[@ class=\"woocommerce-message alert alert-simple alert-icon alert-close-top alert-success\"]")
+    public WebElement changeVerify;
+    @FindBy(xpath="(//*[@type='search'])[1]")
+    public WebElement searchBox1;
+    @FindBy(xpath="//*[@alt='Pen']")
+    public WebElement product;
+    @FindBy(xpath="//*[@alt='Pen']")
+    public WebElement addToCart;
+    @FindBy(xpath="//*[@class='w-icon-cart']")
+    public WebElement cartIcon;
+    @FindBy(xpath="//*[@class='button checkout wc-forward']")
+    public WebElement checkout;
+    @FindBy(xpath="//*[@type='number']")
+    public WebElement quantityBox;
+    @FindBy(xpath="//*[@for='billing_country']")
+    public WebElement country1;
+    @FindBy(xpath="(//h4)[3]")
+    public WebElement paymentMethods;
+    @FindBy(xpath="//*[@class='woocommerce-notice woocommerce-notice--success woocommerce-thankyou-order-received order-success']")
+    public WebElement thankYouText;
+    @FindBy(xpath="//*[@id='place_order']")
+    public WebElement placeOrder;
+
 
 
 
@@ -1775,8 +1817,6 @@ public AlloverCommercePage(){
     public WebElement wrongUsernameOrPasswordText;
     @FindBy(xpath ="(//button[@type='submit'])[2]" )
     public WebElement SignInOnay;
-    @FindBy(xpath ="(//a[@class='nav-link active'])[1]" )
-    public WebElement signInButton;
 
     @FindBy(xpath ="//a[@href='signup']" )
     public WebElement signUpButton;
@@ -1840,7 +1880,6 @@ public AlloverCommercePage(){
 
 
 
-    //Sema Malkoc
 
 
 
@@ -1955,6 +1994,1231 @@ public AlloverCommercePage(){
 
 
 
-   //Sema Malkoc
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }

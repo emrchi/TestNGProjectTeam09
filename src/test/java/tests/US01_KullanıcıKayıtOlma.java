@@ -1,7 +1,6 @@
 package tests;
 
 import com.github.javafaker.Faker;
-import org.openqa.selenium.Keys;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.AlloverCommercePage;
@@ -9,8 +8,6 @@ import utilities.ConfigReader;
 import utilities.Driver;
 import utilities.ExtentReport;
 import utilities.ReusableMethods;
-
-import java.security.Key;
 
 
 public class US01_KullanıcıKayıtOlma extends ExtentReport {
@@ -73,7 +70,7 @@ public class US01_KullanıcıKayıtOlma extends ExtentReport {
         extentTest.info("Gizlilik politikasını kabul ediyorum'yazısı seçildi");
 
         //Başarılı bir kayıt yapıldığını doğrula
-        Assert.assertTrue(alloverCommercePage.searchBox.isDisplayed());
+        Assert.assertTrue(alloverCommercePage.myaccount.isDisplayed());
         extentTest.info("Başarili bir kullanici kaydi olusturuldu.");
 
 
