@@ -32,6 +32,7 @@ public abstract class ExtentReport {
         extentHtmlReporter.config().setDocumentTitle("Extent Report");
         extentHtmlReporter.config().setReportName("TestNG Reports");
     }
+
     @AfterMethod(alwaysRun = true)
     public void tearDownMethod(ITestResult result) throws IOException {
         if (result.getStatus() == ITestResult.FAILURE) { // eğer testin sonucu başarısızsa
@@ -42,11 +43,14 @@ public abstract class ExtentReport {
         } else if (result.getStatus() == ITestResult.SKIP) { // eğer test çalıştırılmadan geçilmezse
             extentTest.skip("Test Case is skipped: " + result.getName());
         }
-     //   Driver.closeDriver();
-    }
 
-    @AfterTest(alwaysRun = true)
-    public void tearDownTest() {
-        extentReports.flush();
+         //Driver.closeDriver();
+
+
+
+
+      //  @AfterTest(alwaysRun = true)
+      //  public void tearDownTest () {
+            extentReports.flush();
+        }
     }
-}

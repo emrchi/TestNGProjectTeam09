@@ -199,8 +199,8 @@ public AlloverCommercePage(){
 
   //Ahmet Gul
   // Emre Yilmaz
-    @FindBy(xpath = "//*[@name='login']")
-    public WebElement loginButton;
+  @FindBy(xpath = "//*[@name='login']")
+  public WebElement loginButton;
     @FindBy(xpath = "//a[text()='Addresses']")
     public WebElement addresses;
     @FindBy(xpath = "(//a[@class='edit btn btn-link btn-primary btn-underline mb-4'])[1]")
@@ -249,9 +249,6 @@ public AlloverCommercePage(){
     public WebElement editYourBillingAddressButton;
     @FindBy(xpath = "//*[@class='woocommerce-message alert alert-simple alert-icon alert-close-top alert-success']")
     public WebElement warningPozitive;
-
-
-
 
 
 
@@ -1200,7 +1197,7 @@ public AlloverCommercePage(){
     //Ibrahim
     //Ferat Toktas
     @FindBy(xpath = "(//input[@class='form-control'])[1]")
-    public WebElement searchBox;
+    public WebElement searchBox01;
     @FindBy(xpath = "(//button[@type='submit'])[1]")
     public WebElement searchButton;
     @FindBy(xpath = "(//img[@class='attachment-woocommerce_thumbnail size-woocommerce_thumbnail'])[4]")
@@ -1399,22 +1396,32 @@ public AlloverCommercePage(){
     
     //Ferhat Toktas
     // Mecid
+    @FindBy(xpath = "//*[@class='wcfm_menu_toggler wcfmfa fa-bars text_tip']")
+    public WebElement orders;
+
+    @FindBy(xpath = "(//*[text()='Downloads'])[2]")
+    public WebElement downloads;
+
+    @FindBy(xpath = "(//*[text()='Wishlist'])[2]")
+    public WebElement wishlist;
+
+
+    @FindBy(linkText = "https://allovercommerce.com/my-account-2/support-tickets/")
+    public WebElement supportTickets;
+
+    @FindBy(linkText = "https://allovercommerce.com/my-account-2/followings/")
+    public WebElement followings;
+
+    @FindBy(linkText = "https://allovercommerce.com/my-account-2/customer-logout/?_wpnonce=e46de17014")
+    public WebElement logOut;
+
+    @FindBy(xpath= "//h4[@class='icon-box-title text-normal']")
+    public WebElement adressVerifyText;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+    @FindBy(xpath = "//span[@id='select2-billing_state-container']")
+    public WebElement province;
 
 
 
@@ -1748,59 +1755,8 @@ public AlloverCommercePage(){
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     //Nalan Demir
     //Sema Malkoc
-    @FindBy(xpath ="(//a[@class='nav-link active'])[2]")
-    public WebElement kullaniciUserName;
     @FindBy(xpath="//*[@name='password']" )
     public WebElement kullaniciPassWord;
     @FindBy(xpath ="" )
