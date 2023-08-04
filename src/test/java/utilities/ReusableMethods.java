@@ -18,22 +18,14 @@ import java.time.Duration;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-
-
-import static tests.US03_AddingBillingAdress.alloverCommercePage;
-
 import static utilities.ExtentReport.extentTest;
 
-
 public class ReusableMethods {
-
-
-
-
 
         //Shipping adress ekleme
         public static void shippingAddressAdd (String name, String surname, String country, String street, String
         city, String state, String zipcode){
+            AlloverCommercePage alloverCommercePage = new AlloverCommercePage();
             //Click on “My Account” button
             ReusableMethods.click(alloverCommercePage.anaSayfaMyAccount);
             extentTest.info("“My Account” button has been clicked.");
@@ -73,6 +65,7 @@ public class ReusableMethods {
         //Billing adress ekleme
         public static void billingAddressAdd (String name, String surname, String country, String street, String
         city, String state, String zipcode, String phone){
+            AlloverCommercePage alloverCommercePage = new AlloverCommercePage();
             //Click on “My Account” button
             ReusableMethods.click(alloverCommercePage.anaSayfaMyAccount);
             extentTest.info("“My Account” button has been clicked.");
@@ -112,6 +105,7 @@ public class ReusableMethods {
         }
         //Negatif Dogrulama
         public static void negativeVerify (String webelementName){
+            AlloverCommercePage alloverCommercePage = new AlloverCommercePage();
             //Click on “Save Address” button
             alloverCommercePage.saveAddress.submit();
             extentTest.info("Clicked on “Save Address” button successfully");
@@ -130,6 +124,7 @@ public class ReusableMethods {
         }
         //Pozitif Dogrulama
         public static void pozitiveVerify () {
+            AlloverCommercePage alloverCommercePage = new AlloverCommercePage();
             //Click on “Save Address” button
             alloverCommercePage.saveAddress.submit();
             extentTest.info("Clicked on “Save Address” button successfully");
@@ -341,7 +336,6 @@ public class ReusableMethods {
             System.out.println("Attribute Value: = " + attribute_Value);
 
         }
-
 
         //File Upload Robot Class
         public static void uploadFile (String dosyaYolu){

@@ -7,7 +7,6 @@ import utilities.ReusableMethods;
 
 public class US04_AddingShippingAdress extends ExtentReport {
 
-    public static AlloverCommercePage alloverCommercePage = new AlloverCommercePage();
     @Test
     public void TC01() {
         extentTest = extentReports.createTest("Shipping Address Negative Adding Test",
