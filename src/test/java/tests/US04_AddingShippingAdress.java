@@ -2,6 +2,7 @@ package tests;
 
 import org.testng.annotations.Test;
 import utilities.ExtentReport;
+import utilities.ReusableMethods;
 
 public class US04_AddingShippingAdress extends ExtentReport {
 

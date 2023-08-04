@@ -373,4 +373,9 @@ public class ReusableMethods {
         }
 
 
+    // refresh
+    public static void refresh(WebDriver driver){
+        driver.navigate().refresh();
     }
+
+}
