@@ -207,6 +207,8 @@ public class US03_AddingBillingAdress extends ExtentReport {
         //Navigate to “Sign in” page and Sign in
         ReusableMethods.signIn("userName", "userPassword");
 
+
+
         //Fill the Billing Addresses data's
         ReusableMethods.billingAddressAdd("name","surname","United States (US)","street",
                 "city","Louisiana","zipCode","phone");
@@ -217,6 +219,8 @@ public class US03_AddingBillingAdress extends ExtentReport {
         Assert.assertEquals(email, ConfigReader.getProperty("userEmail"));
         ReusableMethods.bekle(5);
 
+        //Verify that the address is successfully registered
+        ReusableMethods.pozitiveVerify();
         //Verify that the address is successfully registered
         ReusableMethods.pozitiveVerify();
     }
