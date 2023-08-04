@@ -7,7 +7,7 @@ import pages.AlloverCommercePage;
 import utilities.ConfigReader;
 import utilities.Driver;
 import utilities.ExtentReport;
-import utilities.ReusableMethods;
+
 public class US06_SitedeAlısverisYapabilme extends ExtentReport {
     @Test
     public void testName() {
@@ -22,7 +22,7 @@ public class US06_SitedeAlısverisYapabilme extends ExtentReport {
         //Arama kutusunda 'shoes' arat
         AlloverCommercePage alloverCommercePage=new AlloverCommercePage();
         ReusableMethods.bekle(3);
-        alloverCommercePage.searchBox.sendKeys(ConfigReader.getProperty("product"), Keys.ENTER);
+        alloverCommercePage.searchBox1.sendKeys(ConfigReader.getProperty("product"), Keys.ENTER);
         extentTest.info("Arama kutusunda ürün aratildi.");
         //Çıkan ilk ürünü seç
         ReusableMethods.bekle(3);

@@ -1,5 +1,6 @@
 package tests;
 
+import com.github.javafaker.Faker;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
@@ -9,6 +10,7 @@ import utilities.ConfigReader;
 import utilities.Driver;
 import utilities.ExtentReport;
 import utilities.ReusableMethods;
+
 import static utilities.ReusableMethods.*;
 public class US05_HesapBilgileriDüzenleme extends ExtentReport {
     @Test
@@ -83,4 +85,6 @@ public class US05_HesapBilgileriDüzenleme extends ExtentReport {
         Assert.assertTrue(alloverCommercePage.changeVerify.isDisplayed());
         extentTest.info("Hesap bilgileri başarılı bir şekilde değiştirildi");
     }
+
+
 }
