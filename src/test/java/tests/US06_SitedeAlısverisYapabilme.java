@@ -71,6 +71,6 @@ public class US06_SitedeAlısverisYapabilme extends ExtentReport {
         ReusableMethods.bekle(10);
         Assert.assertTrue(alloverCommercePage.thankYouText.isDisplayed());
         extentTest.info("'Thank you. Your order has been received.' yazisi görüldü.");
-        extentTest.info("Satin alma işleminin başarili bir şekilde gerçekleştiği doğrulandi.");
+        extentTest.pass("Satin alma işleminin başarili bir şekilde gerçekleştiği doğrulandi.");
     }
 }
