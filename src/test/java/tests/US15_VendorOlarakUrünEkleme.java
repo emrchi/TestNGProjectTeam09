@@ -49,11 +49,11 @@ public class US15_VendorOlarakUrünEkleme extends ExtentReport{
         //6 Mağaza Yöneticisine tıklayın
         sourcePage.storeManager.click();
         //7 Açılan Mağaza Yöneticisi sayfasında Ürünler bölümünün görünür olduğunu doğrulayın
-        Assert.assertTrue(sourcePage.products.isDisplayed());
+        Assert.assertTrue(sourcePage.products1.isDisplayed());
         extentTest.info("Products görüldüğünün doğrulaması yapıldı");
         //8 Ürünler'in üzerine geldiğinizde görünen Yeni Ekle'ye tıklayın.
-        sourcePage.products.click();
-        sourcePage.addNew.click();
+        sourcePage.products1.click();
+        sourcePage.addNew1.click();
         //9 Sayfanın altındaki Envanter menüsünün görünürlüğünü doğrulayın
         Assert.assertTrue(sourcePage.inventory.isDisplayed());
         extentTest.info("Inventory bölümünün görüldüğünün doğrulaması yapıldı");
@@ -103,10 +103,10 @@ public class US15_VendorOlarakUrünEkleme extends ExtentReport{
 
         extentTest.info("Products görüldüğünün doğrulaması yapıldı");
         //8 Ürünler'in üzerine geldiğinizde görünen Yeni Ekle'ye tıklayın.
-        sourcePage.products.click();
-        sourcePage.addNew.click();
+        sourcePage.products1.click();
+        sourcePage.addNew1.click();
 //        9 Ürün başlığı alanına eklemek istediğiniz ürün adını girin
-        sourcePage.productTitle.sendKeys("EyeGlass");
+        sourcePage.productTitle1.sendKeys("EyeGlass");
 //      11 Kategori Bölümünden eklenen ürünün ait olduğu kategoriyi işaretler
 
 //      12 Sayfanın altındaki Envanter eylemini seçin
@@ -134,7 +134,7 @@ public class US15_VendorOlarakUrünEkleme extends ExtentReport{
         Assert.assertTrue(sourcePage.productSuccess.isDisplayed());
          ReusableMethods.bekle(3);
 //        20 Sayfanın sol tarafındaki Ürünler öğesine tıklayın.
-          sourcePage.products.click();
+          sourcePage.products1.click();
           ReusableMethods.bekle(4);
 //        21 Envanter işleminde girilen SKU değerinin bu sayfada görünür olduğunu doğrulayın
             Assert.assertEquals(sourcePage.skugorunmesi.getAttribute("Ab123"), sourcePage.sku.getAttribute("Ab123"));
@@ -164,10 +164,10 @@ public class US15_VendorOlarakUrünEkleme extends ExtentReport{
         //5 Mağaza Yöneticisine tıklayın
         sourcePage.storeManager.click();
         //6 Ürünler'in üzerine geldiğinizde görünen Yeni Ekle'ye tıklayın.
-        sourcePage.products.click();
-        sourcePage.addNew.click();
+        sourcePage.products1.click();
+        sourcePage.addNew1.click();
 //       7 Ürün başlığı alanına eklemek istediğiniz ürün adını girin
-        sourcePage.productTitle.sendKeys("EyeGlass2");
+        sourcePage.productTitle1.sendKeys("EyeGlass2");
 //      8 Sayfanın altındaki Envanter eylemini seçin
         scrollEnd();
         ReusableMethods.bekle(2);
@@ -186,7 +186,7 @@ public class US15_VendorOlarakUrünEkleme extends ExtentReport{
         ReusableMethods.bekle(3);
 
 //      13 Sayfanın sol tarafındaki Ürünler öğesine tıklayın.
-        sourcePage.products.click();
+        sourcePage.products1.click();
         ReusableMethods.bekle(4);
 //      14 Envanter işleminde seçilen stok durumunun bu sayfada görünür olduğunu doğrulayın
         System.out.println(sourcePage.inStockOnline.getText());
@@ -215,10 +215,10 @@ public class US15_VendorOlarakUrünEkleme extends ExtentReport{
         //5 Mağaza Yöneticisine tıklayın
         sourcePage.storeManager.click();
         //6 Ürünler'in üzerine geldiğinizde görünen Yeni Ekle'ye tıklayın.
-        sourcePage.products.click();
-        sourcePage.addNew.click();
+        sourcePage.products1.click();
+        sourcePage.addNew1.click();
 //       7 Ürün başlığı alanına eklemek istediğiniz ürün adını girin
-        sourcePage.productTitle.sendKeys("EyeGlass3");
+        sourcePage.productTitle1.sendKeys("EyeGlass3");
 
 //      8 Sayfanın altındaki Gönderi eylemini seçin
         ReusableMethods.scroll(sourcePage.shipp1);
@@ -276,10 +276,10 @@ public class US15_VendorOlarakUrünEkleme extends ExtentReport{
         //5 Mağaza Yöneticisine tıklayın
         sourcePage.storeManager.click();
         //6 Ürünler'in üzerine geldiğinizde görünen Yeni Ekle'ye tıklayın.
-        sourcePage.products.click();
-        sourcePage.addNew.click();
+        sourcePage.products1.click();
+        sourcePage.addNew1.click();
 //       7 Ürün başlığı alanına eklemek istediğiniz ürün adını girin
-        sourcePage.productTitle.sendKeys("EyeGlass3");
+        sourcePage.productTitle1.sendKeys("EyeGlass3");
 
 //       8 Sayfanın altındaki Öznitelik'e tıklayın
         ReusableMethods.click(sourcePage.attributes);

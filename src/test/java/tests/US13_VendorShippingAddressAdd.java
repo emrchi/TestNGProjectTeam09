@@ -18,7 +18,7 @@ public class US13_VendorShippingAddressAdd {
         //Login as a "Vendor". (kaycen.kamyrn@fixedfor.com Pasword:Mustafa1)
         Driver.getDriver().get(ConfigReader.getProperty("AlloverCommerceUrl"));
         ReusableMethods.bekle(3);
-        alloverCommerce.signInButton.click();
+        alloverCommerce.signInButton1.click();
         ReusableMethods.bekle(3);
         alloverCommerce.userNameArea.sendKeys(ConfigReader.getProperty("AlloverCommerceEmail"), Keys.TAB,ConfigReader.getProperty("AlloverCommercePassword"));
         ReusableMethods.bekle(3);
@@ -81,7 +81,7 @@ public class US13_VendorShippingAddressAdd {
         //Login as a "Vendor". (kaycen.kamyrn@fixedfor.com Pasword:Mustafa1)
         Driver.getDriver().get(ConfigReader.getProperty("AlloverCommerceUrl"));
         ReusableMethods.bekle(3);
-        alloverCommerce.signInButton.click();
+        alloverCommerce.signInButton1.click();
         ReusableMethods.bekle(3);
         alloverCommerce.userNameArea.sendKeys(ConfigReader.getProperty("AlloverCommerceEmail"), Keys.TAB, ConfigReader.getProperty("AlloverCommercePassword"));
         ReusableMethods.bekle(3);
@@ -143,7 +143,7 @@ public class US13_VendorShippingAddressAdd {
         //Login as a "Vendor". (kaycen.kamyrn@fixedfor.com Pasword:Mustafa1)
         Driver.getDriver().get(ConfigReader.getProperty("AlloverCommerceUrl"));
         ReusableMethods.bekle(3);
-        alloverCommerce.signInButton.click();
+        alloverCommerce.signInButton1.click();
         ReusableMethods.bekle(3);
         alloverCommerce.userNameArea.sendKeys(ConfigReader.getProperty("AlloverCommerceEmail"), Keys.TAB,ConfigReader.getProperty("AlloverCommercePassword"));
         ReusableMethods.bekle(3);
@@ -203,7 +203,7 @@ public class US13_VendorShippingAddressAdd {
         //Login as a "Vendor". (kaycen.kamyrn@fixedfor.com Pasword:Mustafa1)
         Driver.getDriver().get(ConfigReader.getProperty("AlloverCommerceUrl"));
         ReusableMethods.bekle(3);
-        alloverCommerce.signInButton.click();
+        alloverCommerce.signInButton1.click();
         ReusableMethods.bekle(3);
         alloverCommerce.userNameArea.sendKeys(ConfigReader.getProperty("AlloverCommerceEmail2"), Keys.TAB,ConfigReader.getProperty("AlloverCommercePassword2"));
         ReusableMethods.bekle(3);
@@ -258,7 +258,7 @@ public class US13_VendorShippingAddressAdd {
         //Login as a "Vendor". (kaycen.kamyrn@fixedfor.com Pasword:Mustafa1)
         Driver.getDriver().get(ConfigReader.getProperty("AlloverCommerceUrl"));
         ReusableMethods.bekle(3);
-        alloverCommerce.signInButton.click();
+        alloverCommerce.signInButton1.click();
         ReusableMethods.bekle(3);
         alloverCommerce.userNameArea.sendKeys(ConfigReader.getProperty("AlloverCommerceEmail"), Keys.TAB,ConfigReader.getProperty("AlloverCommercePassword"));
         ReusableMethods.bekle(3);
@@ -318,7 +318,7 @@ public class US13_VendorShippingAddressAdd {
         //Login as a "Vendor". (kaycen.kamyrn@fixedfor.com Pasword:Mustafa1)
         Driver.getDriver().get(ConfigReader.getProperty("AlloverCommerceUrl"));
         ReusableMethods.bekle(3);
-        alloverCommerce.signInButton.click();
+        alloverCommerce.signInButton1.click();
         ReusableMethods.bekle(3);
         alloverCommerce.userNameArea.sendKeys(ConfigReader.getProperty("AlloverCommerceEmail"), Keys.TAB,ConfigReader.getProperty("AlloverCommercePassword"));
         ReusableMethods.bekle(3);
@@ -381,7 +381,7 @@ public class US13_VendorShippingAddressAdd {
         //Login as a "Vendor". (kaycen.kamyrn@fixedfor.com Pasword:Mustafa1)
         Driver.getDriver().get(ConfigReader.getProperty("AlloverCommerceUrl"));
         ReusableMethods.bekle(3);
-        alloverCommerce.signInButton.click();
+        alloverCommerce.signInButton1.click();
         ReusableMethods.bekle(3);
         alloverCommerce.userNameArea.sendKeys(ConfigReader.getProperty("AlloverCommerceEmail"), Keys.TAB,ConfigReader.getProperty("AlloverCommercePassword"));
         ReusableMethods.bekle(3);
@@ -443,7 +443,7 @@ public class US13_VendorShippingAddressAdd {
         //Login as a "Vendor". (kaycen.kamyrn@fixedfor.com Pasword:Mustafa1)
         Driver.getDriver().get(ConfigReader.getProperty("AlloverCommerceUrl"));
         ReusableMethods.bekle(3);
-        alloverCommerce.signInButton.click();
+        alloverCommerce.signInButton1.click();
         ReusableMethods.bekle(3);
         alloverCommerce.userNameArea.sendKeys(ConfigReader.getProperty("AlloverCommerceEmail"), Keys.TAB,ConfigReader.getProperty("AlloverCommercePassword"));
         ReusableMethods.bekle(3);

@@ -1,6 +1,7 @@
 package pages;
 
 
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
@@ -196,9 +197,8 @@ public AlloverCommercePage(){
 
 
 
-
-  //Ahmet Gul
-  // Emre Yilmaz
+    //Ahmet Gul
+    // Emre Yilmaz
   @FindBy(xpath = "//*[@name='login']")
   public WebElement loginButton;
     @FindBy(xpath = "//a[text()='Addresses']")
@@ -597,9 +597,8 @@ public AlloverCommercePage(){
 
 
 
- //Suleyman Nasirdinov
-//Demir Bilmez
-
+    //Suleyman Nasirdinov
+    // Demir Bilmez
     @FindBy(xpath = "//span[text()='Sign In']")
     public WebElement signInButton;
     @FindBy(xpath = "//input[@id='username']")
@@ -658,7 +657,53 @@ public AlloverCommercePage(){
     @FindBy(xpath = "//*[@class=' alert alert-simple alert-icon alert-close-top alert-danger']")
     public WebElement errorMessage;
 
+    @FindBy(xpath = "//*[text()='Store Manager']")
+    public WebElement storManager;
+    @FindBy(xpath = "//*[@class='wcfmfa fa-cube']")
+    public WebElement products1;
+    @FindBy(xpath = "//*[@id='add_new_product_dashboard']")
+    public WebElement addNew1;
+    @FindBy(xpath = "//select[@id='product_type']")
+    public WebElement productTypeDdm;
+    @FindBy(xpath = "//*[@id='featured_img_display']")
+    public WebElement biggerImageButton;
+    @FindBy(xpath = "//*[@id='__wp-uploader-id-1']")
+    public WebElement selectFilesButton;
+    @FindBy(xpath = "//span[@class='wcfm-wp-fields-uploader wcfm_gallery_upload multi_input_block_element wcfm_img_uploader']")
+    public WebElement smallerImageButton;
 
+    @FindBy(xpath = "__wp-uploader-id-13")
+    public WebElement selectFilesButton2;
+    @FindBy(xpath = "//*[@id='pro_title']")
+    public WebElement productTitle1;
+    @FindBy(xpath = "//iframe[@id='excerpt_ifr']")
+    public WebElement iframe1;
+    @FindBy(xpath = "//body[@id='tinymce']")
+    public WebElement shortDescription;
+    @FindBy(xpath = "//iframe[@id='description_ifr']")
+    public WebElement iframe2;
+    @FindBy(xpath = "//body[@id='tinymce']")
+    public WebElement description;
+    @FindBy(xpath = "//button[text()='Select']")
+    public WebElement selectPhoto;
+    @FindBy(xpath = "(//*[@class='wcfm-checkbox checklist_type_product_cat '])[1]")
+    public WebElement categories;
+    @FindBy(xpath = "(//*[@value='798'])[1]")
+    public WebElement productBrands;
+    @FindBy(xpath = "//*[@id='wcfm_products_simple_submit_button']")
+    public WebElement submitButton1;
+    @FindBy(xpath = "//*[text()='+Add new category']")
+    public WebElement addNewButton;
+    @FindBy(xpath = "(//*[@class='wcfm-text wcfm_new_tax_ele wcfm_full_ele'])[1]")
+    public  WebElement categoryName;
+    @FindBy(xpath = "(//*[@class='button wcfm_add_category_bt wcfm_add_taxonomy_bt'])[1]")
+    public  WebElement categoryAdd;
+    @FindBy(xpath = "//*[text()='+Add new Product brands']")
+    public WebElement addProductBrands;
+    @FindBy(xpath = "(//*[@class='wcfm-text wcfm_new_tax_ele wcfm_full_ele'])[2]")
+    public WebElement productBrandsName;
+    @FindBy(xpath = "(//*[@class='button wcfm_add_category_bt wcfm_add_taxonomy_bt'])[2]")
+    public WebElement productBrandsAdd;
 
 
 
@@ -716,7 +761,6 @@ public AlloverCommercePage(){
 
 
 
-    
 
 
 
@@ -753,50 +797,6 @@ public AlloverCommercePage(){
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
     //Demir Bilmez
     //Hafize Aktas
     @FindBy (xpath = "//*[.='Register'][1]" )
@@ -846,159 +846,159 @@ public AlloverCommercePage(){
 
 
 
- 
-  
-  
-  
-    
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   //Hafize Aktas
-  //Ibrahim 
+  //Ibrahim
   @FindBy(xpath = "//*[@id='username']")
   public WebElement signupUpUserName;
   @FindBy(xpath = "//*[@type='search'][1]")
@@ -1087,206 +1087,6 @@ public AlloverCommercePage(){
   public WebElement payAtTheDorButton;
   @FindBy(xpath = "//*[@id='place_order']")
   public WebElement placeOrderButtonu;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    //Hafize Aktas
-    //Ibrahim
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -2018,6 +1818,10 @@ public AlloverCommercePage(){
     @FindBy(xpath ="(//button[@type='submit'])[2]" )
     public WebElement SignInOnay;
 
+    @FindBy(xpath ="(//a[@class='nav-link active'])[1]" )
+    public WebElement signInButton1;
+
+
     @FindBy(xpath ="//a[@href='signup']" )
     public WebElement signUpButton;
 
@@ -2043,9 +1847,6 @@ public AlloverCommercePage(){
     public WebElement negativeVerify;
     @FindBy(xpath ="//*[@name='email']" )
     public WebElement kayitliEmail;
-
-
-
 
 
 

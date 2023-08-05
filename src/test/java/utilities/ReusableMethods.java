@@ -59,7 +59,7 @@ public class ReusableMethods {
             alloverCommercePage.shippingStreet.sendKeys(ConfigReader.getProperty(street));
             extentTest.info("“Street Adddress” has entered in the street address field");
             //Enter Town/City in town/city field
-            alloverCommercePage.shippingCity.sendKeys(ConfigReader.getProperty(city));
+            alloverCommercePage.shippingCity1.sendKeys(ConfigReader.getProperty(city));
             extentTest.info("“Town/City” has entered in the Town/City field");
             //Select State
             WebElement ddmState = alloverCommercePage.shippingState;
@@ -121,7 +121,7 @@ public class ReusableMethods {
         public static void negativeVerify (String webelementName){
             AlloverCommercePage alloverCommercePage = new AlloverCommercePage();
             //Click on “Save Address” button
-            alloverCommercePage.saveAddress.submit();
+            alloverCommercePage.saveAddress1.submit();
             extentTest.info("Clicked on “Save Address” button successfully");
             //See required field message
             ReusableMethods.bekle(3);
@@ -140,7 +140,7 @@ public class ReusableMethods {
         public static void pozitiveVerify () {
             AlloverCommercePage alloverCommercePage = new AlloverCommercePage();
             //Click on “Save Address” button
-            alloverCommercePage.saveAddress.submit();
+            alloverCommercePage.saveAddress1.submit();
             extentTest.info("Clicked on “Save Address” button successfully");
             //Verify that the address is successfully registered
             ReusableMethods.bekle(3);
