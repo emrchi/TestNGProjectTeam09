@@ -3,9 +3,12 @@ package utilities;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 
 import java.io.IOException;
@@ -16,6 +19,7 @@ public abstract class ExtentReport {
     protected static ExtentReports extentReports;
     protected static ExtentTest extentTest;
     protected static ExtentHtmlReporter extentHtmlReporter;
+
     @BeforeTest(alwaysRun = true)
     public void setUpTest() {
         extentReports = new ExtentReports();
@@ -38,7 +42,7 @@ public abstract class ExtentReport {
         } else if (result.getStatus() == ITestResult.SKIP) { // eğer test çalıştırılmadan geçilmezse
             extentTest.skip("Test Case is skipped: " + result.getName());
         }
-        Driver.closeDriver();
+       Driver.closeDriver();
     }
 
     @AfterTest(alwaysRun = true)

@@ -18,7 +18,7 @@ public class US13_VendorShippingAddressAdd {
         //Login as a "Vendor". (kaycen.kamyrn@fixedfor.com Pasword:Mustafa1)
         Driver.getDriver().get(ConfigReader.getProperty("AlloverCommerceUrl"));
         ReusableMethods.bekle(3);
-        alloverCommerce.signInButton.click();
+        alloverCommerce.signInButton1.click();
         ReusableMethods.bekle(3);
         alloverCommerce.userNameArea.sendKeys(ConfigReader.getProperty("AlloverCommerceEmail"), Keys.TAB,ConfigReader.getProperty("AlloverCommercePassword"));
         ReusableMethods.bekle(3);
@@ -60,16 +60,16 @@ public class US13_VendorShippingAddressAdd {
         alloverCommerce.zipCodeArea.clear();
         alloverCommerce.zipCodeArea.sendKeys("06930");
         //Enter Province in the Province field
-        alloverCommerce.shippingCity.clear();
-        alloverCommerce.shippingCity.sendKeys("Ankara");
+        alloverCommerce.shippingCity1.clear();
+        alloverCommerce.shippingCity1.sendKeys("Ankara");
         // Select selectProvince=new Select(alloverCommerce.provinceDdm);
         //selectProvince.selectByVisibleText("Ankara");
         //alloverCommerce.province.click();
         //alloverCommerce.provinceArea.sendKeys("Ankara",Keys.ENTER);
         //Click to 'Save Address' button
         ReusableMethods.bekle(2);
-        actions.moveToElement(alloverCommerce.saveAddress).perform();
-        alloverCommerce.saveAddress.click();
+        actions.moveToElement(alloverCommerce.saveAddress1).perform();
+        alloverCommerce.saveAddress1.click();
         ReusableMethods.bekle(2);
         //"Address changed successfully." Verify that the message appears.
         // Assert.assertTrue(alloverCommerce.verifyMessage.getText().contains("Address changed successfully."));
@@ -81,7 +81,7 @@ public class US13_VendorShippingAddressAdd {
         //Login as a "Vendor". (kaycen.kamyrn@fixedfor.com Pasword:Mustafa1)
         Driver.getDriver().get(ConfigReader.getProperty("AlloverCommerceUrl"));
         ReusableMethods.bekle(3);
-        alloverCommerce.signInButton.click();
+        alloverCommerce.signInButton1.click();
         ReusableMethods.bekle(3);
         alloverCommerce.userNameArea.sendKeys(ConfigReader.getProperty("AlloverCommerceEmail"), Keys.TAB, ConfigReader.getProperty("AlloverCommercePassword"));
         ReusableMethods.bekle(3);
@@ -118,8 +118,8 @@ public class US13_VendorShippingAddressAdd {
         alloverCommerce.streetAddress.clear();
         alloverCommerce.streetAddress.sendKeys("address");
         //Enter Town/City in the Town/City field
-        alloverCommerce.shippingCity.clear();
-        alloverCommerce.shippingCity.sendKeys("Ankara");
+        alloverCommerce.shippingCity1.clear();
+        alloverCommerce.shippingCity1.sendKeys("Ankara");
         //Enter ZIP Code in the ZIP Code field
         alloverCommerce.zipCodeArea.clear();
         alloverCommerce.zipCodeArea.sendKeys("06930");
@@ -130,8 +130,8 @@ public class US13_VendorShippingAddressAdd {
         //alloverCommerce.provinceArea.sendKeys("Ankara",Keys.ENTER);
         //Click to 'Save Address' button
         ReusableMethods.bekle(2);
-        actions.moveToElement(alloverCommerce.saveAddress).perform();
-        alloverCommerce.saveAddress.click();
+        actions.moveToElement(alloverCommerce.saveAddress1).perform();
+        alloverCommerce.saveAddress1.click();
         ReusableMethods.bekle(2);
         //"First name is a required field." Verify that the message appears.
         Assert.assertTrue(alloverCommerce.errorMessage.getText().contains("First name is a required field."));
@@ -143,7 +143,7 @@ public class US13_VendorShippingAddressAdd {
         //Login as a "Vendor". (kaycen.kamyrn@fixedfor.com Pasword:Mustafa1)
         Driver.getDriver().get(ConfigReader.getProperty("AlloverCommerceUrl"));
         ReusableMethods.bekle(3);
-        alloverCommerce.signInButton.click();
+        alloverCommerce.signInButton1.click();
         ReusableMethods.bekle(3);
         alloverCommerce.userNameArea.sendKeys(ConfigReader.getProperty("AlloverCommerceEmail"), Keys.TAB,ConfigReader.getProperty("AlloverCommercePassword"));
         ReusableMethods.bekle(3);
@@ -180,8 +180,8 @@ public class US13_VendorShippingAddressAdd {
         alloverCommerce.streetAddress.clear();
         alloverCommerce.streetAddress.sendKeys("address");
         //Enter Town/City in the Town/City field
-        alloverCommerce.shippingCity.clear();
-        alloverCommerce.shippingCity.sendKeys("Ankara");
+        alloverCommerce.shippingCity1.clear();
+        alloverCommerce.shippingCity1.sendKeys("Ankara");
         //Enter ZIP Code in the ZIP Code field
         alloverCommerce.zipCodeArea.clear();
         alloverCommerce.zipCodeArea.sendKeys("06930");
@@ -190,8 +190,8 @@ public class US13_VendorShippingAddressAdd {
         selectProvince.selectByVisibleText("Ankara");
         //Click to 'Save Address' button
         ReusableMethods.bekle(2);
-        actions.moveToElement(alloverCommerce.saveAddress).perform();
-        alloverCommerce.saveAddress.click();
+        actions.moveToElement(alloverCommerce.saveAddress1).perform();
+        alloverCommerce.saveAddress1.click();
         ReusableMethods.bekle(2);
         //"Last name is a required field." Verify that the message appears.
         Assert.assertTrue(alloverCommerce.errorMessage.getText().contains("Last name is a required field."));
@@ -203,7 +203,7 @@ public class US13_VendorShippingAddressAdd {
         //Login as a "Vendor". (kaycen.kamyrn@fixedfor.com Pasword:Mustafa1)
         Driver.getDriver().get(ConfigReader.getProperty("AlloverCommerceUrl"));
         ReusableMethods.bekle(3);
-        alloverCommerce.signInButton.click();
+        alloverCommerce.signInButton1.click();
         ReusableMethods.bekle(3);
         alloverCommerce.userNameArea.sendKeys(ConfigReader.getProperty("AlloverCommerceEmail2"), Keys.TAB,ConfigReader.getProperty("AlloverCommercePassword2"));
         ReusableMethods.bekle(3);
@@ -235,7 +235,7 @@ public class US13_VendorShippingAddressAdd {
         //Enter Address in the Street Address field
         alloverCommerce.streetAddress.sendKeys("address");
         //Enter Town/City in the Town/City field
-        alloverCommerce.shippingCity.sendKeys("Ankara");
+        alloverCommerce.shippingCity1.sendKeys("Ankara");
         //Enter ZIP Code in the ZIP Code field
         alloverCommerce.zipCodeArea.sendKeys("06930");
         //Enter Province in the Province field
@@ -245,8 +245,8 @@ public class US13_VendorShippingAddressAdd {
         //alloverCommerce.provinceArea.sendKeys("Ankara",Keys.ENTER);
         //Click to 'Save Address' button
         ReusableMethods.bekle(2);
-        actions.moveToElement(alloverCommerce.saveAddress).perform();
-        alloverCommerce.saveAddress.click();
+        actions.moveToElement(alloverCommerce.saveAddress1).perform();
+        alloverCommerce.saveAddress1.click();
         ReusableMethods.bekle(2);
         //"Country / Region is a required field." Verify that the message appears.
         Assert.assertTrue(alloverCommerce.errorMessage.getText().contains("Country / Region is a required field."));
@@ -258,7 +258,7 @@ public class US13_VendorShippingAddressAdd {
         //Login as a "Vendor". (kaycen.kamyrn@fixedfor.com Pasword:Mustafa1)
         Driver.getDriver().get(ConfigReader.getProperty("AlloverCommerceUrl"));
         ReusableMethods.bekle(3);
-        alloverCommerce.signInButton.click();
+        alloverCommerce.signInButton1.click();
         ReusableMethods.bekle(3);
         alloverCommerce.userNameArea.sendKeys(ConfigReader.getProperty("AlloverCommerceEmail"), Keys.TAB,ConfigReader.getProperty("AlloverCommercePassword"));
         ReusableMethods.bekle(3);
@@ -294,8 +294,8 @@ public class US13_VendorShippingAddressAdd {
         alloverCommerce.streetAddress.clear();
         alloverCommerce.streetAddress.sendKeys("");
         //Enter Town/City in the Town/City field
-        alloverCommerce.shippingCity.clear();
-        alloverCommerce.shippingCity.sendKeys("Ankara");
+        alloverCommerce.shippingCity1.clear();
+        alloverCommerce.shippingCity1.sendKeys("Ankara");
         //Enter ZIP Code in the ZIP Code field
         alloverCommerce.zipCodeArea.clear();
         alloverCommerce.zipCodeArea.sendKeys("06930");
@@ -306,8 +306,8 @@ public class US13_VendorShippingAddressAdd {
         //alloverCommerce.provinceArea.sendKeys("Ankara",Keys.ENTER);
         //Click to 'Save Address' button
         ReusableMethods.bekle(2);
-        actions.moveToElement(alloverCommerce.saveAddress).perform();
-        alloverCommerce.saveAddress.click();
+        actions.moveToElement(alloverCommerce.saveAddress1).perform();
+        alloverCommerce.saveAddress1.click();
         ReusableMethods.bekle(2);
         //"Street address is a required field." Verify that the message appears.
         Assert.assertTrue(alloverCommerce.errorMessage.getText().contains("Street address is a required field."));
@@ -318,7 +318,7 @@ public class US13_VendorShippingAddressAdd {
         //Login as a "Vendor". (kaycen.kamyrn@fixedfor.com Pasword:Mustafa1)
         Driver.getDriver().get(ConfigReader.getProperty("AlloverCommerceUrl"));
         ReusableMethods.bekle(3);
-        alloverCommerce.signInButton.click();
+        alloverCommerce.signInButton1.click();
         ReusableMethods.bekle(3);
         alloverCommerce.userNameArea.sendKeys(ConfigReader.getProperty("AlloverCommerceEmail"), Keys.TAB,ConfigReader.getProperty("AlloverCommercePassword"));
         ReusableMethods.bekle(3);
@@ -356,8 +356,8 @@ public class US13_VendorShippingAddressAdd {
         alloverCommerce.streetAddress.clear();
         alloverCommerce.streetAddress.sendKeys("address");
         //Enter Town/City in the Town/City field
-        alloverCommerce.shippingCity.clear();
-        alloverCommerce.shippingCity.sendKeys("");
+        alloverCommerce.shippingCity1.clear();
+        alloverCommerce.shippingCity1.sendKeys("");
         //Enter ZIP Code in the ZIP Code field
         alloverCommerce.zipCodeArea.clear();
         alloverCommerce.zipCodeArea.sendKeys("06930");
@@ -368,8 +368,8 @@ public class US13_VendorShippingAddressAdd {
         //alloverCommerce.provinceArea.sendKeys("Ankara",Keys.ENTER);
         //Click to 'Save Address' button
         ReusableMethods.bekle(2);
-        actions.moveToElement(alloverCommerce.saveAddress).perform();
-        alloverCommerce.saveAddress.click();
+        actions.moveToElement(alloverCommerce.saveAddress1).perform();
+        alloverCommerce.saveAddress1.click();
         ReusableMethods.bekle(2);
         //"Town / City is a required field." Verify that the message appears.
         Assert.assertTrue(alloverCommerce.errorMessage.getText().contains("Town / City is a required field."));
@@ -381,7 +381,7 @@ public class US13_VendorShippingAddressAdd {
         //Login as a "Vendor". (kaycen.kamyrn@fixedfor.com Pasword:Mustafa1)
         Driver.getDriver().get(ConfigReader.getProperty("AlloverCommerceUrl"));
         ReusableMethods.bekle(3);
-        alloverCommerce.signInButton.click();
+        alloverCommerce.signInButton1.click();
         ReusableMethods.bekle(3);
         alloverCommerce.userNameArea.sendKeys(ConfigReader.getProperty("AlloverCommerceEmail"), Keys.TAB,ConfigReader.getProperty("AlloverCommercePassword"));
         ReusableMethods.bekle(3);
@@ -418,8 +418,8 @@ public class US13_VendorShippingAddressAdd {
         alloverCommerce.streetAddress.clear();
         alloverCommerce.streetAddress.sendKeys("address");
         //Enter Town/City in the Town/City field
-        alloverCommerce.shippingCity.clear();
-        alloverCommerce.shippingCity.sendKeys("Ankara");
+        alloverCommerce.shippingCity1.clear();
+        alloverCommerce.shippingCity1.sendKeys("Ankara");
         //Enter ZIP Code in the ZIP Code field
         alloverCommerce.zipCodeArea.clear();
         alloverCommerce.zipCodeArea.sendKeys("");
@@ -430,8 +430,8 @@ public class US13_VendorShippingAddressAdd {
         //alloverCommerce.provinceArea.sendKeys("Ankara",Keys.ENTER);
         //Click to 'Save Address' button
         ReusableMethods.bekle(2);
-        actions.moveToElement(alloverCommerce.saveAddress).perform();
-        alloverCommerce.saveAddress.click();
+        actions.moveToElement(alloverCommerce.saveAddress1).perform();
+        alloverCommerce.saveAddress1.click();
         ReusableMethods.bekle(2);
         //"Postcode / ZIP is a required field." Verify that the message appears.
         Assert.assertTrue(alloverCommerce.errorMessage.getText().contains("Postcode / ZIP is a required field."));
@@ -443,7 +443,7 @@ public class US13_VendorShippingAddressAdd {
         //Login as a "Vendor". (kaycen.kamyrn@fixedfor.com Pasword:Mustafa1)
         Driver.getDriver().get(ConfigReader.getProperty("AlloverCommerceUrl"));
         ReusableMethods.bekle(3);
-        alloverCommerce.signInButton.click();
+        alloverCommerce.signInButton1.click();
         ReusableMethods.bekle(3);
         alloverCommerce.userNameArea.sendKeys(ConfigReader.getProperty("AlloverCommerceEmail"), Keys.TAB,ConfigReader.getProperty("AlloverCommercePassword"));
         ReusableMethods.bekle(3);
@@ -475,7 +475,7 @@ public class US13_VendorShippingAddressAdd {
         //Enter Address in the Street Address field
         alloverCommerce.streetAddress.sendKeys("address");
         //Enter Town/City in the Town/City field
-        alloverCommerce.shippingCity.sendKeys("Ankara");
+        alloverCommerce.shippingCity1.sendKeys("Ankara");
         //Enter ZIP Code in the ZIP Code field
         alloverCommerce.zipCodeArea.sendKeys("06930");
         //Enter Province in the Province field

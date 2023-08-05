@@ -25,7 +25,7 @@ public class Driver {
      */
     }
 
-    static WebDriver driver;
+    public static WebDriver driver;
     public static WebDriver getDriver() {
         /*
         DRiver'i her cagirdigimiz da yeni bir pencere acilmasinin onune gecmek icin
