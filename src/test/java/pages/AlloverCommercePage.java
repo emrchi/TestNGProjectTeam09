@@ -8,10 +8,13 @@ import org.openqa.selenium.support.FindBy;
 
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
+import utilities.ReusableMethods;
 
 
 public class AlloverCommercePage {
-public AlloverCommercePage(){
+
+
+    public AlloverCommercePage(){
     PageFactory.initElements(Driver.getDriver(),this);
 }
 
@@ -1599,6 +1602,21 @@ public AlloverCommercePage(){
 
     //Mecid
     //Nalan Demir
+    @FindBy(xpath="//*[@class='quantity-plus w-icon-plus']")
+    public WebElement urunArttirma;
+    @FindBy(xpath="//*[@class='quantity-minus w-icon-minus']")
+    public WebElement urunAzaltma;
+
+    @FindBy(xpath="//*[@width='300']")
+    public WebElement cartProduct;
+    @FindBy(xpath="//h3[text()='Billing details']")
+    public WebElement billingDeteils;
+    @FindBy(xpath="//h4[text()='Payment Methods']")
+    public WebElement paymentMethod;
+    @FindBy(xpath="//*[@id='payment_method_bacs']")
+    public WebElement transferEFT;
+    @FindBy(xpath="//*[@id='payment_method_cod']")
+    public WebElement payAtTheDoor;
     @FindBy(xpath = "(//*[text()='My Account'])[2]")
     public WebElement myaccount;
     @FindBy(xpath = "//*[text()='Dashboard']")
@@ -1629,7 +1647,7 @@ public AlloverCommercePage(){
     public WebElement changeVerify;
     @FindBy(xpath="(//*[@type='search'])[1]")
     public WebElement searchBox1;
-    @FindBy(xpath="//*[@alt='Pen']")
+    @FindBy(xpath="(//*[@class='attachment-woocommerce_thumbnail size-woocommerce_thumbnail'])[3]")
     public WebElement product;
     @FindBy(xpath="//*[@alt='Pen']")
     public WebElement addToCart;

@@ -6,6 +6,7 @@ import org.testng.annotations.Test;
 import pages.AlloverCommercePage;
 import utilities.ConfigReader;
 import utilities.Driver;
+import utilities.ReusableMethods;
 
 import utilities.ExtentReport;
 import utilities.ReusableMethods;
