@@ -2,6 +2,7 @@ package utilities;
 import com.github.javafaker.Faker;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -20,7 +21,7 @@ import java.util.Date;
 import java.util.List;
 
 
-import static tests.US03_AddingBillingAdress.alloverCommercePage;
+
 
 import static utilities.ExtentReport.extentTest;
 
@@ -34,6 +35,7 @@ public class ReusableMethods {
         //Shipping adress ekleme
         public static void shippingAddressAdd (String name, String surname, String country, String street, String
         city, String state, String zipcode){
+            AlloverCommercePage alloverCommercePage = new AlloverCommercePage();
             //Click on “My Account” button
             ReusableMethods.click(alloverCommercePage.anaSayfaMyAccount);
             extentTest.info("“My Account” button has been clicked.");
@@ -73,12 +75,16 @@ public class ReusableMethods {
         //Billing adress ekleme
         public static void billingAddressAdd (String name, String surname, String country, String street, String
         city, String state, String zipcode, String phone){
+            AlloverCommercePage alloverCommercePage = new AlloverCommercePage();
             //Click on “My Account” button
             ReusableMethods.click(alloverCommercePage.anaSayfaMyAccount);
             extentTest.info("“My Account” button has been clicked.");
             //Click on “Addresses" button
             alloverCommercePage.addresses.click();
             extentTest.info("“Addresses” button has been clicked.");
+            Actions actions = new Actions(Driver.getDriver());
+            actions.scrollByAmount(1,250);
+            actions.perform();
             //Click on “ADD” button below “Billing Address"
             alloverCommercePage.billingAddressAdd.click();
             extentTest.info("“Add” button has been clicked.");
@@ -109,9 +115,11 @@ public class ReusableMethods {
             alloverCommercePage.billingPhone.sendKeys(ConfigReader.getProperty(phone));
             extentTest.info("“Phone Number” has entered in the Phone Number field");
             extentTest.info("Filled the Billing Addresses data's successfully");
+
         }
         //Negatif Dogrulama
         public static void negativeVerify (String webelementName){
+            AlloverCommercePage alloverCommercePage = new AlloverCommercePage();
             //Click on “Save Address” button
             alloverCommercePage.saveAddress1.submit();
             extentTest.info("Clicked on “Save Address” button successfully");
@@ -130,6 +138,7 @@ public class ReusableMethods {
         }
         //Pozitif Dogrulama
         public static void pozitiveVerify () {
+            AlloverCommercePage alloverCommercePage = new AlloverCommercePage();
             //Click on “Save Address” button
             alloverCommercePage.saveAddress1.submit();
             extentTest.info("Clicked on “Save Address” button successfully");
@@ -364,4 +373,9 @@ public class ReusableMethods {
         }
 
 
+    // refresh
+    public static void refresh(WebDriver driver){
+        driver.navigate().refresh();
     }
+
+}

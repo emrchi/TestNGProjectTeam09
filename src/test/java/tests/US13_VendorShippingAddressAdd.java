@@ -464,7 +464,7 @@ public class US13_VendorShippingAddressAdd {
         //Enter your last name in the "Last Name" field.
         //ReusableMethods.sendKeysJS(alloverCommerce.lastName,"Bilmez");
         alloverCommerce.lastName.sendKeys("Bilmez");
-        ReusableMethods.scroll(alloverCommerce.country);
+        ReusableMethods.scroll(alloverCommerce.country1);
         ReusableMethods.bekle(1);
         //Enter Country in the "Country /Region" field and select the Country that appears.
         Select select=new Select(alloverCommerce.countryDdm);
