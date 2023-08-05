@@ -225,6 +225,8 @@ public AlloverCommercePage(){
     public WebElement shippingStreet;
     @FindBy(xpath = "//input[@id='billing_city']")
     public WebElement billingCity;
+    @FindBy(xpath = "//*[@id='shipping_city']")
+    public WebElement shippingCity;
     @FindBy(xpath = "(//select)[2]")
     public WebElement billingState;
     @FindBy(xpath = "(//select)[2]")
@@ -247,8 +249,6 @@ public AlloverCommercePage(){
     public WebElement editYourBillingAddressButton;
     @FindBy(xpath = "//*[@class='woocommerce-message alert alert-simple alert-icon alert-close-top alert-success']")
     public WebElement warningPozitive;
-
-
 
 
 
@@ -846,47 +846,247 @@ public AlloverCommercePage(){
 
 
 
+ 
+  
+  
+  
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
 
+  //Hafize Aktas
+  //Ibrahim 
+  @FindBy(xpath = "//*[@id='username']")
+  public WebElement signupUpUserName;
+  @FindBy(xpath = "//*[@type='search'][1]")
+  public WebElement aramaKutusu;
 
+//us07
+  @FindBy(xpath = "//*[@class='compare btn-product-icon'][1]")
+  public WebElement ilkUrunCompareIkonu;
+  @FindBy(xpath = "(//*[@class='compare btn-product-icon'])[1]")
+  public WebElement ikinciUrunCompareIkonu;
+  @FindBy(xpath = "(//*[@class='compare btn-product-icon'])[2]")
+  public WebElement üçüncüUrunCompareIkonu;
+  @FindBy(xpath = "(//*[@class='compare btn-product-icon'])[3]")
+  public WebElement dördüncüUrunCompareIkonu;
 
+  @FindBy(xpath = "(//*[@class='compare btn-product-icon'])[4]")
+  public WebElement beşinciUrunCompareIkonu;
 
+  @FindBy(xpath = "(//*[@class='attachment-woocommerce_thumbnail size-woocommerce_thumbnail'])[15]")
+  public WebElement eklendiVerify1;
+  @FindBy(xpath = "(//*[@class='attachment-woocommerce_thumbnail size-woocommerce_thumbnail'])[20]")
+  public WebElement eklendiVerify2;
+  @FindBy(xpath = "(//*[@class='attachment-woocommerce_thumbnail size-woocommerce_thumbnail'])[21]")
+  public WebElement eklendiVerify3;
+  @FindBy(xpath = "(//*[@class='attachment-woocommerce_thumbnail size-woocommerce_thumbnail'])[24]")
+  public WebElement eklendiVerify4;
 
+  @FindBy(xpath = "Start Compare !")
+  public WebElement startCompareButonu;
+  @FindBy(xpath = "//*[@class='page-title']")
+  public WebElement karsılastırmaVerify;
 
+  @FindBy(xpath = "//*[@class='compare-popup-overlay']")
+  public WebElement boşBirAlan;
 
+  @FindBy(xpath = "(//*[@class='w-icon-times-solid'])[1]")
+  public WebElement ilkUrünüKapat;
+  @FindBy(xpath = "(//*[@class='w-icon-times-solid'])[2]")
+  public WebElement ikinciUrünüKapat;
+  @FindBy(xpath = "(//*[@class='w-icon-times-solid'])[3]")
+  public WebElement üçünncüUrünüKapat;
+  @FindBy(xpath = "(//*[@class='w-icon-times-solid'])[4]")
+  public WebElement dördüncüUrünüKapat;
 
+  @FindBy(xpath = "//*[@class='compare-heading']")
+  public WebElement ilkUrünKapatVerify1;
+  @FindBy(xpath = "//*[@class='slider-slide swiper-slide-next']")
+  public WebElement ikinciUrünKapatVerify2;
+  @FindBy(xpath = "(//*[@class='slider-slide'])[1]")
+  public WebElement üçüncüUrünKapatVerify3;
+  @FindBy(xpath = "(//*[@class='slider-slide'])[]")
+  public WebElement dördüncüUrünKapatVerify4;
 
+  @FindBy(xpath = "(//*[h2])[2]")
+  public WebElement ürünKalmadıVerify5;
 
+//US08**************************
+  @FindBy(xpath = "(//a)[22]")
+  public WebElement ilkÜrünKalpIkonu;
+  @FindBy(xpath = "(//*[@rel='nofollow'])[5]")
+  public WebElement ikinciÜrünKalpIkonu;
+  @FindBy(xpath = "//*[@class='w-icon-heart']")
+  public WebElement wishlistIkonu;
+  @FindBy(xpath = "(//h2)[2]")
+  public WebElement wishlistVerify;
+  @FindBy(xpath = "(//*[@class='btn btn-quickview btn-outline btn-default btn-rounded btn-sm mr-lg-2'])[1]")
+  public WebElement quickView1;
+  @FindBy(xpath = "//*[@class='summary entry-summary scrollable']")
+  public WebElement seçilenUrünÖzellikleriVerify;
+  @FindBy(xpath = "//*[@name='add-to-cart']")
+  public WebElement addToCartButtonu;
+  @FindBy(xpath = "//*[@class='minipopup-area']")
+  public WebElement viewCartButtonu;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  @FindBy(xpath = "(//*[@class='attachment-woocommerce_thumbnail size-woocommerce_thumbnail'])[2]")
+  public WebElement sepettekiÜrünVerify;
+  @FindBy(xpath = "//*[@type='number']")
+  public WebElement sepettekiÜrünSayısıVerify;
+  @FindBy(xpath = "//*[@class='checkout-button button alt wc-forward']")
+  public WebElement procedToCheckoutButton;
+  @FindBy(xpath = "(//*[a])[17]")
+  public WebElement ödemeAdresBilgileriEkranıCheckoutVerify;
+  @FindBy(xpath = "//*[@id='payment_method_bacs']")
+  public WebElement wireTransferEftButton;
+  @FindBy(xpath = "//*[@id='payment_method_cod']")
+  public WebElement payAtTheDorButton;
+  @FindBy(xpath = "//*[@id='place_order']")
+  public WebElement placeOrderButtonu;
 
 
 
