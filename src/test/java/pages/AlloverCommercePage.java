@@ -225,6 +225,8 @@ public AlloverCommercePage(){
     public WebElement shippingStreet;
     @FindBy(xpath = "//input[@id='billing_city']")
     public WebElement billingCity;
+    @FindBy(xpath = "//*[@id='shipping_city']")
+    public WebElement shippingCity;
     @FindBy(xpath = "(//select)[2]")
     public WebElement billingState;
     @FindBy(xpath = "(//select)[2]")
@@ -247,8 +249,6 @@ public AlloverCommercePage(){
     public WebElement editYourBillingAddressButton;
     @FindBy(xpath = "//*[@class='woocommerce-message alert alert-simple alert-icon alert-close-top alert-success']")
     public WebElement warningPozitive;
-
-
 
 
 

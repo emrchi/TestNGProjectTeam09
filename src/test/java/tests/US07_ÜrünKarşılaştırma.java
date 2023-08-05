@@ -6,14 +6,19 @@ import org.testng.annotations.Test;
 import pages.AlloverCommercePage;
 import utilities.ConfigReader;
 import utilities.Driver;
+import utilities.ExtentReport;
 import utilities.ReusableMethods;
 
-public class US07_ÜrünKarşılaştırma {
+public class US07_ÜrünKarşılaştırma extends ExtentReport {
     @Test
     public void test01() {
+        extentTest = extentReports.createTest("Billing Address Negative Adding Test",
+                "Inability to add a billing address with blank “First Name” field");
 
      // 1- Anasayfaya git
         Driver.getDriver().get(ConfigReader.getProperty("allovercommerceUrl"));
+        extentTest.info("Anasayfaya gidildi.");
+
 
      //  2- Login ol
         AlloverCommercePage page = new AlloverCommercePage();
