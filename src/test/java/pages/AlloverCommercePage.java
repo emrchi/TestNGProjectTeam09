@@ -78,7 +78,7 @@ public class AlloverCommercePage {
     @FindBy(xpath = "//*[@id=\"wcfm-products\"]/tbody/tr/td[4]")
     public WebElement skugorunmesi;
 
-    @FindBy(xpath = "//*[@class='instock']")
+    @FindBy(xpath = "//*[text()='In stock']")
     public WebElement inStockOnline;
 
     @FindBy(xpath = "//*[@id=\"wcfm_products_manage_form_shipping_head\"]/div")
@@ -197,13 +197,11 @@ public class AlloverCommercePage {
 
 
 
+  //Ahmet Gul
+  // Emre Yilmaz
+    @FindBy(xpath = "//*[@name='login']")
+    public WebElement loginButton;
 
-
-
-    //Ahmet Gul
-    // Emre Yilmaz
-  @FindBy(xpath = "//*[@name='login']")
-  public WebElement loginButton;
     @FindBy(xpath = "//a[text()='Addresses']")
     public WebElement addresses;
     @FindBy(xpath = "(//a[@class='edit btn btn-link btn-primary btn-underline mb-4'])[1]")
@@ -1000,6 +998,179 @@ public class AlloverCommercePage {
 
 
 
+ 
+  
+  
+  
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+
+
   //Hafize Aktas
   //Ibrahim
   @FindBy(xpath = "//*[@id='username']")
@@ -1090,7 +1261,6 @@ public class AlloverCommercePage {
   public WebElement payAtTheDorButton;
   @FindBy(xpath = "//*[@id='place_order']")
   public WebElement placeOrderButtonu;
-
 
 
 
@@ -2017,7 +2187,6 @@ public class AlloverCommercePage {
 
 
     //Sema Malkoc
-
 
 
 }
