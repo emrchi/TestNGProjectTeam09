@@ -9,7 +9,6 @@ import utilities.ReusableMethods;
 
 public class US03_AddingBillingAdress extends ExtentReport {
 
-    public static AlloverCommercePage alloverCommercePage = new AlloverCommercePage();
     @Test
     public void TC01() {
         extentTest = extentReports.createTest("Billing Address Negative Adding Test",
@@ -209,15 +208,20 @@ public class US03_AddingBillingAdress extends ExtentReport {
         //Navigate to “Sign in” page and Sign in
         ReusableMethods.signIn("userName", "userPassword");
 
+
+
         //Fill the Billing Addresses data's
         ReusableMethods.billingAddressAdd("name","surname","United States (US)","street",
                 "city","Louisiana","zipCode","phone");
 
         //Email address; It should come automatically as the registered e-mail address
+        AlloverCommercePage alloverCommercePage = new AlloverCommercePage();
         String email = alloverCommercePage.billingEmail.getAttribute("value");
         Assert.assertEquals(email, ConfigReader.getProperty("userEmail"));
         ReusableMethods.bekle(5);
 
+        //Verify that the address is successfully registered
+        ReusableMethods.pozitiveVerify();
         //Verify that the address is successfully registered
         ReusableMethods.pozitiveVerify();
     }

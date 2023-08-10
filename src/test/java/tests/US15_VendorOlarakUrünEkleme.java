@@ -3,19 +3,15 @@ package tests;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import org.testng.asserts.SoftAssert;
 import pages.AlloverCommercePage;
 import utilities.ConfigReader;
 import utilities.Driver;
 import utilities.ExtentReport;
 import utilities.ReusableMethods;
 
-import java.security.Key;
-import java.util.Collections;
 import java.util.Set;
 
 import static utilities.Driver.driver;
@@ -51,11 +47,11 @@ public class US15_VendorOlarakUrünEkleme extends ExtentReport{
         //6 Mağaza Yöneticisine tıklayın
         sourcePage.storeManager.click();
         //7 Açılan Mağaza Yöneticisi sayfasında Ürünler bölümünün görünür olduğunu doğrulayın
-        Assert.assertTrue(sourcePage.products.isDisplayed());
+        Assert.assertTrue(sourcePage.products1.isDisplayed());
         extentTest.info("Products görüldüğünün doğrulaması yapıldı");
         //8 Ürünler'in üzerine geldiğinizde görünen Yeni Ekle'ye tıklayın.
-        sourcePage.products.click();
-        sourcePage.addNew.click();
+        sourcePage.products1.click();
+        sourcePage.addNew1.click();
         //9 Sayfanın altındaki Envanter menüsünün görünürlüğünü doğrulayın
         Assert.assertTrue(sourcePage.inventory.isDisplayed());
         extentTest.info("Inventory bölümünün görüldüğünün doğrulaması yapıldı");
@@ -101,11 +97,15 @@ public class US15_VendorOlarakUrünEkleme extends ExtentReport{
         //7 Açılan Mağaza Yöneticisi sayfasında Ürünler bölümünün görünür olduğunu doğrulayın
         extentTest.info("Products görüldüğünün doğrulaması yapıldı");
         //8 Ürünler'in üzerine geldiğinizde görünen Yeni Ekle'ye tıklayın.
-        sourcePage.products.click();
-        sourcePage.addNew.click();
+        sourcePage.products1.click();
+        sourcePage.addNew1.click();
 //        9 Ürün başlığı alanına eklemek istediğiniz ürün adını girin
+
         sourcePage.productTitle.sendKeys("EyeGlass");
         extentTest.info("Ürün adı giirildi.");
+
+        sourcePage.productTitle1.sendKeys("EyeGlass");
+
 //      11 Kategori Bölümünden eklenen ürünün ait olduğu kategoriyi işaretler
         ReusableMethods.click(sourcePage.accessories);
         extentTest.info("Ürüne ait olan kategori seçildi");
@@ -135,7 +135,7 @@ public class US15_VendorOlarakUrünEkleme extends ExtentReport{
          ReusableMethods.bekle(3);
         extentTest.info("Ürünün başarıyla yayınlandığının görünürlüğü doğrulandı");
 //        20 Sayfanın sol tarafındaki Ürünler öğesine tıklayın.
-          sourcePage.products.click();
+          sourcePage.products1.click();
           ReusableMethods.bekle(4);
 //        21 Envanter işleminde girilen SKU değerinin bu sayfada görünür olduğunu doğrulayın
             Assert.assertEquals(sourcePage.skugorunmesi.getAttribute("Ab123"), sourcePage.sku.getAttribute("Ab123"));
@@ -164,10 +164,10 @@ public class US15_VendorOlarakUrünEkleme extends ExtentReport{
         //5 Mağaza Yöneticisine tıklayın
         sourcePage.storeManager.click();
         //6 Ürünler'in üzerine geldiğinizde görünen Yeni Ekle'ye tıklayın.
-        sourcePage.products.click();
-        sourcePage.addNew.click();
+        sourcePage.products1.click();
+        sourcePage.addNew1.click();
 //       7 Ürün başlığı alanına eklemek istediğiniz ürün adını girin
-        sourcePage.productTitle.sendKeys("EyeGlass2");
+        sourcePage.productTitle1.sendKeys("EyeGlass2");
 //      8 Sayfanın altındaki Envanter eylemini seçin
         scrollEnd();
         ReusableMethods.bekle(2);
@@ -187,7 +187,7 @@ public class US15_VendorOlarakUrünEkleme extends ExtentReport{
         ReusableMethods.bekle(3);
         extentTest.info("Ürünün başarıyla görünür olduğu doğrulandı");
 //      13 Sayfanın sol tarafındaki Ürünler öğesine tıklayın.
-        sourcePage.products.click();
+        sourcePage.products1.click();
         ReusableMethods.bekle(4);
 //      14 Envanter işleminde seçilen stok durumunun bu sayfada görünür olduğunu doğrulayın
         System.out.println(sourcePage.inStockOnline.getText());
@@ -217,11 +217,16 @@ public class US15_VendorOlarakUrünEkleme extends ExtentReport{
         //5 Mağaza Yöneticisine tıklayın
         sourcePage.storeManager.click();
         //6 Ürünler'in üzerine geldiğinizde görünen Yeni Ekle'ye tıklayın.
-        sourcePage.products.click();
-        sourcePage.addNew.click();
+        sourcePage.products1.click();
+        sourcePage.addNew1.click();
 //       7 Ürün başlığı alanına eklemek istediğiniz ürün adını girin
+
         sourcePage.productTitle.sendKeys("EyeGlass3");
         extentTest.info("Ürünün adı girildi");
+
+        sourcePage.productTitle1.sendKeys("EyeGlass3");
+
+
 //      8 Sayfanın altındaki Gönderi eylemini seçin
         ReusableMethods.scroll(sourcePage.shipp1);
         ReusableMethods.click(sourcePage.shipp1);
@@ -278,11 +283,16 @@ public class US15_VendorOlarakUrünEkleme extends ExtentReport{
         //5 Mağaza Yöneticisine tıklayın
         sourcePage.storeManager.click();
         //6 Ürünler'in üzerine geldiğinizde görünen Yeni Ekle'ye tıklayın.
-        sourcePage.products.click();
-        sourcePage.addNew.click();
+        sourcePage.products1.click();
+        sourcePage.addNew1.click();
 //       7 Ürün başlığı alanına eklemek istediğiniz ürün adını girin
+
         sourcePage.productTitle.sendKeys("EyeGlass3");
         extentTest.info("Ürünün adı girildi");
+
+        sourcePage.productTitle1.sendKeys("EyeGlass3");
+
+
 //       8 Sayfanın altındaki Öznitelik'e tıklayın
         ReusableMethods.click(sourcePage.attributes);
 //       9 Açılır bölümdeki renk onay kutusuna tıklayın
