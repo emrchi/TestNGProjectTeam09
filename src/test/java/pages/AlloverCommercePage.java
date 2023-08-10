@@ -74,7 +74,7 @@ public AlloverCommercePage(){
     @FindBy(xpath = "//*[@id=\"wcfm-products\"]/tbody/tr/td[4]")
     public WebElement skugorunmesi;
 
-    @FindBy(xpath = "//*[@class='instock']")
+    @FindBy(xpath = "//*[text()='In stock']")
     public WebElement inStockOnline;
 
     @FindBy(xpath = "//*[@id=\"wcfm_products_manage_form_shipping_head\"]/div")
@@ -166,10 +166,6 @@ public AlloverCommercePage(){
 
     @FindBy(xpath = "//*[text()='Gallery Images: This field is required.']")
     public WebElement galleryİmage;
-
-
-
-
 
 
 
@@ -998,7 +994,8 @@ public AlloverCommercePage(){
   
   
   
-  
+
+
   //Hafize Aktas
   //Ibrahim 
   
@@ -1198,7 +1195,6 @@ public AlloverCommercePage(){
   
   
   
-
 
     //Ibrahim
     //Ferat Toktas
@@ -1887,7 +1883,6 @@ public AlloverCommercePage(){
 
 
 
-    //Sema Malkoc
 
 
 

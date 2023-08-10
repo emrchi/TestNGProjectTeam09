@@ -38,6 +38,7 @@ public class US16_VendorOlarakSimpleProductEkleyebilm extends ExtentReport {
         sourcePage.myAccount.click();
         //6 Mağaza Yöneticisine tıklayın
        sourcePage.storeManager.click();
+        extentTest.info("Mağaza yöneticisine gidildi.");
         //8 Ürünler'in üzerine geldiğinizde görünen Yeni Ekle'ye tıklayın.
         sourcePage.products.click();
         sourcePage.addNew.click();
@@ -45,41 +46,50 @@ public class US16_VendorOlarakSimpleProductEkleyebilm extends ExtentReport {
         WebElement ddmSelectaState = driver.findElement(By.xpath("//select[@id='product_type']"));
         Select select = new Select(ddmSelectaState);
         select.getFirstSelectedOption().isDisplayed();
-
+        extentTest.info("Simple Product'ın varsayılan olarak geldiği görüldü'");
 //        7 Sanal ve İndirilebilir onay kutularının seçilebilir olduğunu doğrulayın
         sourcePage.virtualSelected.isSelected();
         sourcePage.downloadedselected.isSelected();
+        extentTest.info("Sanal ve Onay Kutularının seçilebilir olduğu görüldü");
 //        8 Sanal onay kutunuzu seçin
         ReusableMethods.click(sourcePage.virtualSelected);
+        extentTest.info("Sanal onay kutusu seçildli");
 //        9 Fiyat ve Satış Fiyatı metin kutularının erişilebilir olduğunu doğrulayın
         sourcePage.prices.isEnabled();
         sourcePage.sales.isEnabled();
 //        10 Fiyat ve Satış Fiyatı metin kutularına bir değer girin
         sourcePage.sales.sendKeys("5",Keys.ENTER);
         sourcePage.prices.sendKeys("3",Keys.ENTER);
+        extentTest.info("Fiyat ve satış fiyatı girildi");
 //        11 Ürün Başlığı metin kutusunun erişilebilir olduğunu doğrulayın
         sourcePage.productTitle.isEnabled();
+        extentTest.info("Metin kutusunun errişilebilir oludğu görüldü");
 //        12 Ürün Başlığı metin kutusuna bir değer girin
         sourcePage.productTitle.sendKeys("EyeGlass4");
+        extentTest.info("Metin kutusuna isim girildi");
 //        13 Kategoriler altındaki kategorilerin seçilebilir olduğunu doğrulayın
         sourcePage.checklist.isEnabled();
 //        14 Kategoriler'den bir kategori seçin
         ReusableMethods.click(sourcePage.accessories);
+        extentTest.info("Kategorilerden kategori seçildi");
 //        15 Sağ taraftaki resim ekle düğmesine tıklayın ve resim ekleyin
         ReusableMethods.click(sourcePage.resimsec);
         ReusableMethods.click(sourcePage.mediaLibrary);
         ReusableMethods.click(sourcePage.resimIcon);
         ReusableMethods.click(sourcePage.selectButton);
         ReusableMethods.bekle(2);
+        extentTest.info("Resim Ekle bölümünden resim eklendi");
 //        16 En alttaki Gönder düğmesine tıklayın.
         ReusableMethods.click(sourcePage.draftData);
 //        17 Ürün Başarıyla Yayınlandı'nın görünür olduğunu doğrulayın
         Assert.assertTrue(sourcePage.productSucces.getText().contains("Product Successfully Saved."));
-
+        extentTest.info("Ürünün başarıyla kaydedildiği görüldü");
 //        18 Ürünün eklendiğini Ürün bölümünde görebilmelisiniz Ürün Başarıyla Yayınlandı
         ReusableMethods.bekle(2);
         ReusableMethods.click(sourcePage.products);
+        ReusableMethods.bekle(4);
         Assert.assertTrue(sourcePage.inStockOnline.isDisplayed());
+        extentTest.pass("Ürünün görüntülebildiği görüldü");
 
 
     }
@@ -101,20 +111,26 @@ public class US16_VendorOlarakSimpleProductEkleyebilm extends ExtentReport {
         scrollEnd();
         ReusableMethods.bekle(2);
         sourcePage.myAccount.click();
+        extentTest.info("MyAccount sayfasına gidildi");
         //2 Mağaza Yöneticisine tıklayın
         sourcePage.storeManager.click();
+        extentTest.info("Mağaza yöneticisine gidildi.");
         //3 Ürünler'in üzerine geldiğinizde görünen Yeni Ekle'ye tıklayın.
         sourcePage.products.click();
         sourcePage.addNew.click();
 //        8 "Sanal" onay kutusunu seçin
         ReusableMethods.click(sourcePage.virtualSelected);
+        extentTest.info("Sanal onay kutusu seçildi");
 //        10 Fiyat ve Satış Fiyatı metin kutularına bir değer girin
         sourcePage.sales.sendKeys("5", Keys.ENTER);
         sourcePage.prices.sendKeys("3", Keys.ENTER);
+        extentTest.info("Fiyat ve Satış fiyatı değerleri girildi");
 //        12 Ürün Başlığı metin kutusuna bir değer girin
         sourcePage.productTitle.sendKeys("EyeGlass5");
+        extentTest.info("Ürünün adı girildi");
 //        14 Kategoriler'den bir kategori seçin
         ReusableMethods.click(sourcePage.accessories);
+        extentTest.info("Kategori alanında kategori girildi");
 //        15 En alttaki Gönder düğmesine tıklayın.
         ReusableMethods.click(sourcePage.submitButton);
 //        16 "Öne çıkan img: Bu alan zorunludur.
@@ -123,9 +139,10 @@ public class US16_VendorOlarakSimpleProductEkleyebilm extends ExtentReport {
        Assert.assertTrue(sourcePage.imgFailed1.isDisplayed());
        Assert.assertTrue(sourcePage.galleryİmage.isDisplayed());
         ReusableMethods.bekle(3);
+        extentTest.pass("Görsellerin girilmesi zorunludur yazısı görüldü");
 
     }
-
+/*
     @Test
     public void testTc03() {
         extentTest = extentReports.createTest("allovercommerce sitesine girme", "Vendor olarak ürün ekleme testi");
@@ -167,7 +184,7 @@ public class US16_VendorOlarakSimpleProductEkleyebilm extends ExtentReport {
 //        17 Ürünün Ürün bölümüne eklendiğini görebilmeniz gerekir
         ReusableMethods.bekle(2);
         ReusableMethods.click(sourcePage.products);
-        ReusableMethods.bekle(3);
+        ReusableMethods.bekle(4);
         Assert.assertTrue(sourcePage.inStockOnline.isDisplayed());
     }
 
@@ -213,7 +230,7 @@ public class US16_VendorOlarakSimpleProductEkleyebilm extends ExtentReport {
 //        17 Ürünün Ürün bölümüne eklendiğini görebilmeniz gerekir
         ReusableMethods.bekle(2);
         ReusableMethods.click(sourcePage.products);
-        ReusableMethods.bekle(3);
+        ReusableMethods.bekle(4);
         Assert.assertTrue(sourcePage.inStockOnline.isDisplayed());
 
     }
@@ -268,7 +285,7 @@ public class US16_VendorOlarakSimpleProductEkleyebilm extends ExtentReport {
         extentTest = extentReports.createTest("allovercommerce sitesine girme", "Vendor olarak ürün ekleme testi");
         Driver.getDriver().get(ConfigReader.getProperty("alloverVendorUrl"));
         AlloverCommercePage sourcePage = new AlloverCommercePage();
-//
+
 //        //1 https://allovercommerce.com/ adresine gidin
         extentTest.info("allovercommerce anasayfasina gidildi.");
         sourcePage.login.click();
@@ -312,4 +329,6 @@ public class US16_VendorOlarakSimpleProductEkleyebilm extends ExtentReport {
 
 
     }
+
+ */
 }
