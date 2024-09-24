@@ -27,7 +27,7 @@ public class ExtentReport {
         extentReports.setSystemInfo("Browser", "Chrome");
         extentReports.setSystemInfo("Tester", "Team09");
         extentHtmlReporter.config().setDocumentTitle("Extent Report");
-        extentHtmlReporter.config().setReportName("TestNG Reports");
+        extentHtmlReporter.config().setReportName("Smart Cookie Kid TestNG Reports");
     }
 
     @AfterMethod(alwaysRun = true)

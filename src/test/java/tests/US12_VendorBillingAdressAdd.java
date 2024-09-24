@@ -13,7 +13,6 @@ import utilities.Driver;
 import utilities.ExtentReport;
 import utilities.ReusableMethods;
 
-import static tests.US03_AddingBillingAdress.alloverCommercePage;
 import static utilities.ReusableMethods.scrollEnd;
 
 public class US12_VendorBillingAdressAdd extends ExtentReport {
